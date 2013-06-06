@@ -21,7 +21,8 @@ async.series([
     ["kendoui"],
     ["intelappframework"],
     ["lungo"],
-    ["phonejs"]
+    ["phonejs"],
+    ["enyo"]
   ])
 
 ], function(err) {
