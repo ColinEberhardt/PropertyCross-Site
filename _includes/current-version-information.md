@@ -1,3 +1,10 @@
+#### New in v1.2 - June 6<sup>th</sup>, 2013
+
+- [Enyo]({{ site.baseurl }}/enyo/) implementation added.
+- PropertyCross has moved into the [TasteJS](https://github.com/tastejs) organization!
+
+<br/><br/>
+
 #### New in v1.1 - May 22<sup>nd</sup>, 2013
 
 - [PhoneJS]({{ site.baseurl }}/phonejs/) implementation added.
