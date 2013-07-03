@@ -10,6 +10,7 @@ async.series([
                                                   "assets/templates/tech_badge_mask.png",
                                                   "assets/templates/tech_badge_fg.png", [
     ["xamarin"],
+    ["delphi"],
     ["air"],
     ["titanium"],
     ["jqtouch"],
