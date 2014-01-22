@@ -1,9 +1,19 @@
+#### New in v1.3 - January 23<sup>rd</sup>, 2014
+
+- [Delphi](/delphi/) implementation added.
+- [Emy](/emy/) implementation added.
+- [Lavaca](/lavaca/) implementation added.
+- [Intel App Framework](/intelappframework), [Sencha Touch 2](/senchatouch2), [Enyo](/enyo) and [PhoneJS](/phonejs) implementations updated.
+- PhoneGap implementations now using common Cordova 3.1 configuration
+
+
+
 #### New in v1.2 - June 6<sup>th</sup>, 2013
 
-- [Enyo]({{ site.baseurl }}/enyo/) implementation added.
+- [Enyo](/enyo/) implementation added.
 - PropertyCross has moved into the [TasteJS](https://github.com/tastejs) organization!
 
-<br/><br/>
+
 
 #### New in v1.1 - May 22<sup>nd</sup>, 2013
 
@@ -12,7 +22,8 @@
 - Improved documentation on github.
 - [Kendo UI]({{ site.baseurl }}/kendoui/) now uses a 'slide' transition.
 
-<br/><br/>
+
+
 #### New in v1.0 - May 3<sup>rd</sup>, 2013
 
 - Improved [specification]({{ site.githuburl }}/tree/master/specification) in order to make the various implementations more uniform.
