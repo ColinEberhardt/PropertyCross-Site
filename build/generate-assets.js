@@ -23,6 +23,7 @@ async.series([
     ["intelappframework"],
     ["lungo"],
     ["phonejs"],
+    ["emy"],
     ["enyo"]
   ])
 
