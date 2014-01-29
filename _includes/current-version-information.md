@@ -2,7 +2,6 @@
 
 - [Delphi](/delphi/) implementation added.
 - [Emy](/emy/) implementation added.
-- [Lavaca](/lavaca/) implementation added.
 - [Intel App Framework](/intelappframework), [Sencha Touch 2](/senchatouch2), [Enyo](/enyo) and [PhoneJS](/phonejs) implementations updated.
 - PhoneGap implementations now using common Cordova 3.1 configuration
 
