@@ -32,4 +32,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
 
   grunt.registerTask("default", ["metadata", "descriptions", "pieCharts", "downloads", "writePosts", "execute", "less"]);
+  grunt.registerTask("posts", ["metadata", "descriptions", "pieCharts", "downloads", "writePosts"]);
 };

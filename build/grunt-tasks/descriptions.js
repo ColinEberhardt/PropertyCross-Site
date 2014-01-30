@@ -2,19 +2,20 @@ module.exports = function(grunt) {
   var path = require("path");
 
   grunt.registerTask('descriptions', 'Load Implementation Descriptions', function() {
-    var i, impl, readme, j,
+    var i, impl, readme, j, headingRegex, overviewTitle,
         overview = null,
         metadata = grunt.config.get("metadataKeys"),
-        headingRegex = /^#+/,
-        overviewRegex = /^#+ *(Overview|Introduction)/;
+        overviewRegex = /^(#+) *(Overview|Introduction)/;
 
     for (i = 0; i < metadata.length; i++) {
       grunt.log.debug("Getting metadata for "+metadata[i]);
       impl = grunt.config.get("metadata." + metadata[i]);
       readme = grunt.file.read(path.join(impl.path, "README.md")).split("\n");
       for (j = 0; j < readme.length; j++) {
-        if (overviewRegex.test(readme[j])) {
+        overviewTitle = overviewRegex.exec(readme[j]);
+        if (overviewTitle) {
           grunt.log.debug("Found start of overview");
+          headingRegex = new RegExp("^"+overviewTitle[1]+"[^#]");
           overview = "";
         } else if (overview !== null && headingRegex.test(readme[j])) {
           grunt.log.debug("Found end of overview");
