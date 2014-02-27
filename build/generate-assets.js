@@ -24,7 +24,8 @@ async.series([
     ["lungo"],
     ["phonejs"],
     ["emy"],
-    ["enyo"]
+    ["enyo"],
+    ["neomad"]
   ])
 
 ], function(err) {
