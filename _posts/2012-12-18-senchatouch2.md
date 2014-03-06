@@ -13,7 +13,8 @@ contributors:
   - { name: 'Joel Smith', username: joelwilliamsmith, hash: 6e5b209f9dced24655066d1128a13964 }
   - { name: 'Nicholas Wolverson', username: nwolverson, hash: c2fa082fa1ffbab1293262c599d459fb }
 downloads:
-  windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-senchatouch2-119bb069ee155b0a75b8a0d9108b70379f3dc67d.xap'
+  windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-senchatouch2-78ca1a200fb404a850ab121f7bcc652a2168bca4.xap'
+  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-senchatouch2-78ca1a200fb404a850ab121f7bcc652a2168bca4.apk'
 phonegap: true
 
 ---

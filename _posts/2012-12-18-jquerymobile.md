@@ -15,7 +15,8 @@ contributors:
   - { name: 'Colin Eberhardt', username: colineberhardt, hash: 458f2e0d08d4114f8b323798cfea141d }
   - { name: 'Chris Price', username: chrisprice, hash: b6fe36176ec7c9475374a5cd3b7bef1a }
 downloads:
-  ios: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jQueryMobile-167ed1f91c1db14c6c374c1636edda052c834414.ipa'
+  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-da776067e7e7682fdc4209faf6ee987a0dfae739.apk'
+  windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-initial.xap'
 phonegap: true
 
 ---

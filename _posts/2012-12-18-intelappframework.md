@@ -11,8 +11,8 @@ pie:
 contributors:
   - { name: 'Joel Smith', username: joelwilliamsmith, hash: 6e5b209f9dced24655066d1128a13964 }
 downloads:
-  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-IntelAppFramework-ce8e28b80dae09684b2022bfece8a13c101c6d24.apk'
-  ios: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-IntelAppFramework-ce8e28b80dae09684b2022bfece8a13c101c6d24.ipa'
+  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-intelappframework-b15e5714b3858b0ce154f1e5925b2cb815ef0afe.apk'
+  windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-intelappframework-b15e5714b3858b0ce154f1e5925b2cb815ef0afe.xap'
 phonegap: true
 
 ---

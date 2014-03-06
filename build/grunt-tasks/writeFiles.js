@@ -1,18 +1,20 @@
 module.exports = function(grunt) {
   var yaml = require("yamljs"),
       _ = require("lodash"),
-      fileExtensions = {
+      extensionName = {
         apk: "android",
         ipa: "ios",
         xap: "windowsphone"
-      };
+      },
+      visibleDownloads = [ "android", "windowsphone" ],
+      pathExtension = function(path) { return path.substring(path.lastIndexOf(".") + 1); },
+      pieChartImplFilter = _.curry(function(impl, elem) { return elem.statsRoot == impl; });
 
   grunt.registerTask("writePosts", "Write the Jekyll posts", function() {
-    var pieChartImplFilter,
-        metadataKeys = grunt.config.get("metadataKeys"),
+    var metadataKeys = grunt.config.get("metadataKeys"),
         pieCharts = grunt.config.get("pieCharts");
 
-    pieChartImplFilter = _.curry(function(impl, elem) { return elem.statsRoot == impl; });
+    
     grunt.log.debug(yaml.stringify(metadataKeys));
     metadataKeys.forEach(function(impl) {
       var metadata = grunt.config.get("metadata."+impl),
@@ -28,7 +30,7 @@ module.exports = function(grunt) {
         platforms: metadata.platforms,
         pie: pieChart.pie,
         contributors: metadata.contributors,
-        downloads: _.zipObject(downloads.map(function(el) { return [fileExtensions[el.substring(el.lastIndexOf(".") + 1)], el] }))
+        downloads: _.zipObject(downloads.map(function(el) { return [ extensionName[pathExtension(el)], el ]; }).filter(function(el) { return _.contains(visibleDownloads, _.first(el)); }))
       }, 2, 2);
 
       if (metadata.appId) {
