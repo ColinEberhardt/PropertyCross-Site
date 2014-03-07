@@ -8,12 +8,16 @@ module.exports = function(grunt) {
       };
 
   grunt.registerTask("writePosts", "Write the Jekyll posts", function() {
-    var metadataKeys = grunt.config.get("metadataKeys");
+    var pieChartImplFilter,
+        metadataKeys = grunt.config.get("metadataKeys"),
+        pieCharts = grunt.config.get("pieCharts");
+
+    pieChartImplFilter = _.curry(function(impl, elem) { return elem.statsRoot == impl; });
     grunt.log.debug(yaml.stringify(metadataKeys));
     metadataKeys.forEach(function(impl) {
       var metadata = grunt.config.get("metadata."+impl),
           downloads = grunt.config.get("downloads."+impl) || [],
-          pieChart = grunt.config.get("pieCharts."+impl) || { common: { segment: 'M150,150l0.00,-145.00A145,145,0,1,1,149.95,5.00z' } },
+          pieChart = _.first(pieCharts.filter(pieChartImplFilter(impl))) || { pie: { common: { segment: 'M150,150l0.00,-145.00A145,145,0,1,1,149.95,5.00z' } }, statsRoot: impl },
           description = grunt.config.get("description."+impl),
           content = "---\nlayout: framework\n",
           postName = "_posts/2012-12-18-"+impl+".md";
@@ -22,7 +26,7 @@ module.exports = function(grunt) {
         title: metadata.implName,
         framework: metadata.name,
         platforms: metadata.platforms,
-        pie: pieChart,
+        pie: pieChart.pie,
         contributors: metadata.contributors,
         downloads: _.zipObject(downloads.map(function(el) { return [fileExtensions[el.substring(el.lastIndexOf(".") + 1)], el] }))
       }, 2, 2);
