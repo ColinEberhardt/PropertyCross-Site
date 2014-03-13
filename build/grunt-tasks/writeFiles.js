@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         content += "phonegap: true\n";
       }
 
-      content += "\n---\n" + description;
+      content += "\n---\n" + description.replace(/\r\n|\n|\r/g, "\n");
 
       grunt.verbose.debug("\n===============\n"+impl+"\n===============\n"+content);
 
