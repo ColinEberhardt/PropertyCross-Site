@@ -25,7 +25,8 @@ async.series([
     ["phonejs"],
     ["emy"],
     ["enyo"],
-    ["neomad"]
+    ["neomad"],
+    ["ionic"]
   ])
 
 ], function(err) {
