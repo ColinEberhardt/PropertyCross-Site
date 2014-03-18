@@ -18,3 +18,5 @@ extensions:
   android: apk
   ios: ipa
   windowsphone: xap
+
+blogurl: http://tastejs.roon.io/
