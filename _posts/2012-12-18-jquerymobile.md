@@ -7,12 +7,16 @@ platforms:
   - ios
   - windowsphone
 pie:
-  common: { segment: 'M150,150l0.00,-145.00A145,145,0,1,1,149.95,5.00z' }
+  android: { segment: 'M150,150l0.00,-145.00A145,145,0,0,1,158.46,5.25z', line: 'M150,150l8.46,-144.75' }
+  ios: { segment: 'M150,150l8.46,-144.75A145,145,0,0,1,165.77,5.86z', line: 'M150,150l15.77,-144.14' }
+  windowsphone: { segment: 'M150,150l15.77,-144.14A145,145,0,0,1,183.92,9.02z', line: 'M150,150l33.92,-140.98' }
+  common: { segment: 'M150,150l33.92,-140.98A145,145,0,1,1,150.00,5.00z', line: 'M150,150l-0.00,-145.00' }
 contributors:
   - { name: 'Colin Eberhardt', username: colineberhardt, hash: 458f2e0d08d4114f8b323798cfea141d }
   - { name: 'Chris Price', username: chrisprice, hash: b6fe36176ec7c9475374a5cd3b7bef1a }
 downloads:
-  ios: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jQueryMobile-167ed1f91c1db14c6c374c1636edda052c834414.ipa'
+  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-da776067e7e7682fdc4209faf6ee987a0dfae739.apk'
+  windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-initial.xap'
 phonegap: true
 
 ---

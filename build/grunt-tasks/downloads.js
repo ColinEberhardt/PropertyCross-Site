@@ -3,7 +3,9 @@ module.exports = function(grunt) {
       child_process = require("child_process"),
       Q = require("q"),
       _ = require("lodash"),
-      YAML = require("yamljs");
+      YAML = require("yamljs"),
+      pathExtension = function(el) { return el.path.substring(el.path.lastIndexOf(".") + 1); },
+      commitComparer = _.curry(function(timestampResolver, a) { return 0 - timestampResolver[a.commit]; });
 
   grunt.registerTask('downloads', 'Finding latest downloads', function() {
     var client, loadData, uniqueArray, credentials,
@@ -34,11 +36,11 @@ module.exports = function(grunt) {
 
         load = function() {
           var content = "",
-            git = child_process.exec("git show -s --format='%ct' "+commitId, { cwd: pcBase });
+            git = child_process.exec("git show -s --format=%ct "+commitId, { cwd: pcBase });
 
           git.stdout.on("data", function(buf) { content += buf.toString(); });
           git.stdout.on("end", function() {
-            var ts = content.trim();
+            var ts = _.parseInt(content.trim());
             grunt.log.debug("Timestamp for commit "+commitId+" is "+ts)
             deferred.resolve([commitId, ts]);
           });
@@ -62,25 +64,25 @@ module.exports = function(grunt) {
           implKey = key[1].toLowerCase();
           version = key[2];
           if (!downloads[implKey]) {
-            downloads[implKey] = { commits: [], files: {} };
+            downloads[implKey] = { commits: [], files:[] };
           }
           if (downloads[implKey].commits.indexOf(version) === -1) {
             downloads[implKey].commits.push(version);
           }
-          if (!downloads[implKey].files[version]) {
-            downloads[implKey].files[version] = [];
-          }
-          downloads[implKey].files[version].push("https://s3-eu-west-1.amazonaws.com/propertycross/" + keys[i]);
+          downloads[implKey].files.push({
+            commit: version,
+            path: "https://s3-eu-west-1.amazonaws.com/propertycross/" + keys[i]
+          });
         }
       }
 
-      Q.all(commits).done(function(data) {
+      Q.all(commitPromises).done(function(data) {
         var commitTimestamps = _.zipObject(data);
         commitTimestamps.initial = -1;
         Object.keys(downloads).forEach(function(key) {
           var impl = downloads[key];
-          impl.commits.sort(function(a,b) { return commitTimestamps[b] - commitTimestamps[a] });
-          grunt.config.set("downloads."+key, impl.files[impl.commits[0]]);
+          var files = _(impl.files).groupBy(pathExtension).flatten(function(ext) { return _(ext).sortBy(commitComparer(commitTimestamps)).first().path; });
+          grunt.config.set("downloads."+key, files.value());
         });
         grunt.log.debug(YAML.stringify(grunt.config.get("downloads")));
         done(true);

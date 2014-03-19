@@ -12,7 +12,6 @@ contributors:
   - { name: Vinothini, username: VinothiniBalakrishnan }
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-rhomobile-719f1c8bfd54d55d3e4afc173624611f5c125dad.apk'
-  ios: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-rhomobile-719f1c8bfd54d55d3e4afc173624611f5c125dad.ipa'
   windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-rhomobile-719f1c8bfd54d55d3e4afc173624611f5c125dad.xap'
 
 ---
