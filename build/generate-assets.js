@@ -26,7 +26,8 @@ async.series([
     ["emy"],
     ["enyo"],
     ["neomad"],
-    ["ionic"]
+    ["ionic"],
+    ["xamarinmvvmcross"]
   ])
 
 ], function(err) {
