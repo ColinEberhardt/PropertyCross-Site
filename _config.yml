@@ -20,3 +20,5 @@ extensions:
   windowsphone: xap
 
 blogurl: http://blog.tastejs.com/
+
+release: v1.4
