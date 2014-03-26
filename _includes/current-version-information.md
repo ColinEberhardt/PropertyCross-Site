@@ -1,3 +1,11 @@
+#### New in v1.4 - March 24<sup>th</sup>, 2014
+
+- [Ionic](/ionic/) implementation added.
+- [NeoMAD](/neomad/) implementation added.
+- [Xamarin MvvmCross](/xamarinmvvmcross/) implementation added.
+- [Delphi](/delphi/) implementation updated.
+- PropertyCross blog has new address - [blog.tastejs.com](http://blog.tastejs.com)
+
 #### New in v1.3 - January 23<sup>rd</sup>, 2014
 
 - [Delphi](/delphi/) implementation added.

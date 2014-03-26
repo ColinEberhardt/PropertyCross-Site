@@ -24,7 +24,10 @@ async.series([
     ["lungo"],
     ["phonejs"],
     ["emy"],
-    ["enyo"]
+    ["enyo"],
+    ["neomad"],
+    ["ionic"],
+    ["xamarinmvvmcross"]
   ])
 
 ], function(err) {

@@ -19,4 +19,6 @@ extensions:
   ios: ipa
   windowsphone: xap
 
-blogurl: http://tastejs.roon.io/
+blogurl: http://blog.tastejs.com/
+
+release: v1.4
