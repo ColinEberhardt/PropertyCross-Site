@@ -26,6 +26,7 @@ async.series([
     ["emy"],
     ["enyo"],
     ["neomad"],
+    ["lavaca"],
     ["ionic"],
     ["xamarinmvvmcross"]
   ])
