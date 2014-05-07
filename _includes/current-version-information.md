@@ -1,3 +1,11 @@
+#### New in v1.5 - May 7<sup>th</sup>, 2014
+
+- [Lavaca](/lavaca/) implementation added.
+- [Enyo](/enyo/) implementation updated.
+- [Sencha Touch 2](/senchatouch2/) implementation updated to use [Sencha Touch 2.3 new themes](http://www.sencha.com/blog/announcing-sencha-touch-2-3-html5-for-ios7-touch-grid-cordova-support-more/).
+- [Titanium](/titanium/), [Xamarin](/xamarin/), [Native](/native/) and [Kendo UI](/kendoui/) implementations updated with iOS 7 look and feel.
+- [Kendo UI](/kendoui/) implementation updated to support Windows Phone 8.
+
 #### New in v1.4 - March 24<sup>th</sup>, 2014
 
 - [Ionic](/ionic/) implementation added.

@@ -15,6 +15,7 @@ contributors:
   - { name: 'Colin Eberhardt', username: colineberhardt, hash: 458f2e0d08d4114f8b323798cfea141d }
   - { name: 'Ross Dargan', username: rossdargan }
 downloads:
+  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-xamarinmvvmcross-initial.apk'
   windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-xamarinmvvmcross-initial.xap'
 
 ---
