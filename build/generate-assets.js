@@ -28,7 +28,8 @@ async.series([
     ["neomad"],
     ["lavaca"],
     ["ionic"],
-    ["xamarinmvvmcross"]
+    ["xamarinmvvmcross"],
+	["famous"]
   ])
 
 ], function(err) {
