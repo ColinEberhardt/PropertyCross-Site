@@ -1,3 +1,9 @@
+#### New in v1.6 - July 15<sup>th</sup>, 2014
+
+- [Famous](/famous/) implementation added.
+- [Intel App Framework](/intelappframework) implementations updated to improve UI.
+- [Native](/native/) implementation updated to take advantage of features in Xcode 5.
+
 #### New in v1.5 - May 7<sup>th</sup>, 2014
 
 - [Lavaca](/lavaca/) implementation added.
