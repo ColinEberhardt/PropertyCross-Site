@@ -19,16 +19,16 @@ layout: default
 
 <div class="row">
   <div class="span6">
-    <div class="versions">
-      {% capture versionInformation %}{% include current-version-information.md %}{% endcapture %}
-      {{ versionInformation | markdownify }}
-    </div>
-    <br/>
     <h4>
       Introduction
     </h4>
     {% capture introduction %}{% include introduction.md %}{% endcapture %}
     {{ introduction | markdownify }}
+    <br/>
+    <div class="versions">
+      {% capture versionInformation %}{% include current-version-information.md %}{% endcapture %}
+      {{ versionInformation | markdownify }}
+    </div>
     <br/>
     <a href="https://twitter.com/PropertyCross" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @PropertyCross</a>
     <a class="twitter-share-button" href="https://twitter.com/share">Tweet</a>
