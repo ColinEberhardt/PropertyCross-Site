@@ -29,7 +29,8 @@ async.series([
     ["lavaca"],
     ["ionic"],
     ["xamarinmvvmcross"],
-	["famous"]
+    ["famous"],
+    ["onsenui"]
   ])
 
 ], function(err) {
