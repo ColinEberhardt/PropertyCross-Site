@@ -7,25 +7,17 @@ platforms:
   - ios
   - windowsphone
 pie:
-  android: { segment: 'M150,150l0.00,-145.00A145,145,0,0,1,158.46,5.25z', line: 'M150,150l8.46,-144.75' }
-  ios: { segment: 'M150,150l8.46,-144.75A145,145,0,0,1,165.77,5.86z', line: 'M150,150l15.77,-144.14' }
-  windowsphone: { segment: 'M150,150l15.77,-144.14A145,145,0,0,1,183.92,9.02z', line: 'M150,150l33.92,-140.98' }
-  common: { segment: 'M150,150l33.92,-140.98A145,145,0,1,1,150.00,5.00z', line: 'M150,150l-0.00,-145.00' }
+  common: { segment: 'M150,150l0.00,-145.00A145,145,0,1,1,149.95,5.00z' }
 contributors:
   - { name: 'Colin Eberhardt', username: colineberhardt, hash: 458f2e0d08d4114f8b323798cfea141d }
   - { name: 'Chris Price', username: chrisprice, hash: b6fe36176ec7c9475374a5cd3b7bef1a }
 downloads:
-  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-da776067e7e7682fdc4209faf6ee987a0dfae739.apk'
-  windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-initial.xap'
+  android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-2f27e2e7f5dff03000a70364117d90c08ffe8b78.apk'
+  windowsphone: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-2f27e2e7f5dff03000a70364117d90c08ffe8b78.xap'
 phonegap: true
 
 ---
 
-[jQuery Mobile](http://jquerymobile.com) is a HTML5 framework which makes it easy to create websites that mimic the iOS look and feel. This is achieved by providing HTML that is marked up with various jQuery Mobile specific attributes, which is then processed to generate the final markup. Within PropertyCross jQuery Mobile is combined with [KnockoutJS](http://knockoutjs.com/), which provides a presentation model (MVVM), [RequireJS](http://requirejs.org/), for dependency management, and [Cordova / PhoneGap](http://phonegap.com/), which packages the HTML / JavaScript within a native wrapper for app-store deployment. Cordova also provides a set of APIs for accessing native phone functionalities which are not available via HTML specifications.
-
-The JavaScript Model and ViewModel code is shared across all mobile platforms, whereas the HTML files, which make up the View, are specific for each platform. This allows the UI for each platform to be tailored to the requirements of each platform. The iOS version uses the out-of-the-box jQuery Mobile styles, whereas Windows Phone uses the [jquery-metro-theme](http://sgrebnov.github.com/jqmobile-metro-theme/) extensions to support the Metro UI style together with Windows Phone specific features such as the app-bar, and the Android version uses the [nativeDroid](http://flypixel.com/nativedroid-a-theme-for-jquery-mobile/7892175001166318) theme.
-
-jQuery Mobile does not provide an easy way to include multiple themes in a common codebase. However, Cordova (and therefore PhoneGap) provides a means to overcome this through the use of [merges](http://cordova.apache.org/docs/en/3.0.0/guide_cli_index.md.html#The%20Command-line%20Interface_customize_each_platform). Unfortuntely we're using PhoneGap Build, which doesn't support merges, so we've had to include an extra `index.html` to redirect for different platforms. We've included the `merges` structure for reference.
-
+[jQuery Mobile](http://jquerymobile.com) is a HTML5 framework which makes it easy to create mobile applications, by using its set of UI widgets. This is achieved by providing HTML that is marked up with various jQuery Mobile specific attributes, which is then processed to generate the final markup. Within PropertyCross jQuery Mobile is combined with [KnockoutJS](http://knockoutjs.com/), which provides a presentation model (MVVM), [RequireJS](http://requirejs.org/), for dependency management, and [Cordova / PhoneGap](http://phonegap.com/), which packages the HTML / JavaScript within a native wrapper for app-store deployment. Cordova also provides a set of APIs for accessing native phone functionalities which are not available via HTML specifications.
 
 To view the code and detailed build steps, <a href='{{ site.githuburl }}/tree/master/jquerymobile'>see the github source</a>.
