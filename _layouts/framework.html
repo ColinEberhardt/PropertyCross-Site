@@ -9,7 +9,7 @@ layout: default
   </a>
   <hr/>
   <h1>
-    {{ page.title }} <img src="/framework-icons/{{ page.framework }}-complete.png"/>
+    {{ page.title }} <img src="{{ site.baseurl }}/framework-icons/{{ page.framework }}-complete.png"/>
   </h1>
 </header>
 
@@ -81,7 +81,7 @@ layout: default
     {% for post in site.posts reversed %}
     <div class="span3">
       <a href="{{ post.url }}">
-        <img src="/framework-icons/{{ post.framework }}-complete.png"/>{{ post.title }}
+        <img src="{{ site.baseurl }}/framework-icons/{{ post.framework }}-complete.png"/>{{ post.title }}
       </a>
     </div>
     {% endfor %}
