@@ -17,11 +17,11 @@ phonegap: true
 
 ---
 
-[PhoneJS](http://js.devexpress.com/) is a commercial HTML5 framework for cross platform mobile application development from [DevExpress](http://www.devexpress.com/). PhoneJS is free for non-commercial use. 
+[DevExtreme](http://js.devexpress.com/) is a commercial cross-platform HTML5/JavaScript tools for mobile and web development from [DevExpress](http://www.devexpress.com/).
 
-PhoneJS uses the [Knockout](http://knockoutjs.com/) MVVM framework for structuring the application, with the PhoneJS CSS providing a native-styled UI for the various phone platforms. PhoneJS applications use [PhoneGap](http://phonegap.com/) for packaging.
+DevExtreme Mobile provides the way to use one of popular MVVM frameworks ([Knockout](http://knockoutjs.com/) or [AngularJS](https://angularjs.org/)) for structuring the application, with the DevExtreme CSS providing a native-styled UI for the various phone platforms. DevExtreme mobile applications use [PhoneGap](http://phonegap.com/) for packaging.
 
-DevExpress also offers a more integrated solution based on PhoneJS, called [DevExtreme](http://www.devexpress.com/Products/HTML-JS/), which adds Visual Studio tooling.
+DevExtreme Complete subscription is a more integrated solution which adds Visual Studio tooling.
 
 
-To view the code and detailed build steps, <a href='{{ site.githuburl }}/tree/master/phonejs'>see the github source</a>.
+To view the code and detailed build steps, <a href='{{ site.githuburl }}/tree/master/devextreme'>see the github source</a>.
