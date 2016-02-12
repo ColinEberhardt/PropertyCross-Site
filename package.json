@@ -1,0 +1,13 @@
+{
+  "name": "property-cross",
+  "version": "2.0.0",
+  "devDependencies": {
+    "bootstrap": "3.3.6",
+    "del": "2.2.0",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.0",
+    "gulp-less": "3.0.5",
+    "gulp-minify-css": "1.2.3",
+    "tiny-ssg": "ColinEberhardt/tiny-ssg#v0.0.4"
+  }
+}
