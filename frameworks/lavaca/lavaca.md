@@ -2,7 +2,7 @@
 layout: framework
 title: lavaca
 framework: lavaca
-type: html5
+html5: true
 platforms:
   android: true
   ios: true

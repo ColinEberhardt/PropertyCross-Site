@@ -2,7 +2,7 @@
 layout: framework
 title: mgwt
 framework: mgwt
-type: compile_to_native
+compile_to_native: true
 platforms:
   android: true
   ios: true

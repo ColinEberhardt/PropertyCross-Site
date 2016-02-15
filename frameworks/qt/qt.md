@@ -2,6 +2,7 @@
 layout: framework
 title: QT
 framework: qt
+compile_to_native: true
 platforms:
   android: true
   ios: true

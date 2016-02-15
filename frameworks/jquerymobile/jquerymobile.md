@@ -2,7 +2,7 @@
 layout: framework
 title: 'jQuery Mobile'
 framework: jquerymobile
-type: html5
+html5: true
 platforms:
   android: true
   ios: true

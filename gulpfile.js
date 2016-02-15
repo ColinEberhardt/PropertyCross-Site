@@ -37,6 +37,14 @@ gulp.task('tinyssg', function() {
   return tinySSG.build(config);
 });
 
+gulp.task('tinyssg-production', function() {
+  const config = {
+      filePattern: ['index.html', 'frameworks/**/*.md'],
+      globalPattern: ['site.yml']
+    };
+  return tinySSG.build(config);
+});
+
 // Reloads the website
 gulp.task('reload-site', function() {
   return gulp.src(buildFolder + '/**/*.*').pipe(connect.reload());
@@ -67,6 +75,10 @@ gulp.task('connect', function(cb) {
 
 gulp.task('build', function(callback) {
   runSequence('clean', 'copy', 'less', 'tinyssg', callback);
+});
+
+gulp.task('build-production', function(callback) {
+  runSequence('clean', 'copy', 'less', 'tinyssg-production', callback);
 });
 
 gulp.task('default', function(callback) {

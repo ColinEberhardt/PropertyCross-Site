@@ -2,7 +2,7 @@
 layout: framework
 title: Native
 framework: native
-type: native
+native: true
 platforms:
   android: true
   ios: true

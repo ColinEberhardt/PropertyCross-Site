@@ -2,7 +2,7 @@
 layout: framework
 title: 'Sencha Touch 2'
 framework: senchatouch2
-type: html5
+html5: true
 platforms:
   android: true
   ios: true
