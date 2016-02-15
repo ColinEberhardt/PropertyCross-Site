@@ -1,0 +1,99 @@
+#html5-frameworks, #compile-to-native-frameworks, #native-frameworks {
+  img {
+    width: 40px;
+    height: 40px;
+    margin: 8px 8px 8px 0;
+  }
+}
+
+#frameworks {
+  background-color: @gray-lighter;
+  padding: @frameworksTablePadding * 2;
+}
+
+#frameworks-row-1 {
+  display: flex;
+}
+
+#native-frameworks {
+  margin-top: @frameworksTablePadding;
+  background-color: white;
+  background-image: @nativeFrameworksBackground;
+  background-repeat: repeat-y;
+
+  h2 {
+    color: @nativeFrameworksColor;
+    margin: @frameworksTablePadding 0;
+  }
+
+  a {
+    margin-left: 50px;
+  }
+}
+
+#html5-frameworks  {
+  background-image:
+    @rightGutterLightGrayBackground,
+    @html5FrameworksBackground;
+  background-size: @frameworksTablePadding, auto;
+  background-repeat: repeat-y, repeat-y;
+  background-position: right, left;
+
+  h2 {
+    color: @html5FrameworksColor
+  }
+}
+
+#compile-to-native-frameworks {
+  background-image: @compileToNativeFrameworksBackground;
+  background-repeat: repeat-y;
+
+  h2 {
+    color: @compileToNativeFrameworksColor;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  #frameworks {
+    padding: @frameworksTablePadding;
+  }
+
+  #frameworks-row-1 {
+    display: block;
+  }
+
+  .framework {
+    margin: 10px 0;
+
+    a {
+      margin-left: @frameworksTablePadding;
+      //display: block so that the whole button is clickable on xs screens
+      display: block;
+    }
+  }
+  
+  #html5-frameworks, #compile-to-native-frameworks, #native-frameworks {
+    background-color: transparent;
+    background-image: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #html5-frameworks {    
+    .framework {
+      background-image: @html5FrameworksBackground;
+    }
+  }
+
+  #compile-to-native-frameworks {
+    .framework {
+      background-image: @compileToNativeFrameworksBackground;
+    }
+  }
+
+  #native-frameworks {
+    .framework {
+      background-image: @nativeFrameworksBackground;
+    }
+  }
+}

@@ -2,7 +2,7 @@
 layout: framework
 title: 'Intel App Framework'
 framework: intelappframework
-type: html5
+html5: true
 platforms:
   android: true
   ios: true

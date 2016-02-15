@@ -2,7 +2,7 @@
 layout: framework
 title: Ionic
 framework: ionic
-type: html5
+html5: true
 platforms:
   android: true
   ios: true
