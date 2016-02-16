@@ -4,11 +4,9 @@
       <h2>HTML5</h2>
       {{#each pages}}
         {{#if html5}}
-        <div class="framework">
-          <a href="{{ ../site.baseurl }}{{ page.destination }}">
+          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
             <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}
           </a>
-         </div>
         {{/if}}
       {{/each}}
     </div>
@@ -16,11 +14,9 @@
       <h2>COMPILE TO NATIVE</h2>
       {{#each pages}}
         {{#if compile_to_native}}
-        <div class="framework">
-          <a href="{{ ../site.baseurl }}{{ page.destination }}">
+          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
             <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}
           </a>
-         </div>
         {{/if}}
       {{/each}}
     </div>
@@ -31,16 +27,12 @@
       <h2>NATIVE</h2>
       {{#each pages}}
         {{#if native}}
-          <div class="framework">
-            <a href="{{ ../site.baseurl }}{{ page.destination }}">
+            <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
               <img src="{{ ../site.baseurl }}/assets/android.png"/> Android (Java)
             </a>
-          </div>
-          <div class="framework">
-            <a href="{{ ../site.baseurl }}{{ page.destination }}">
+            <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
               <img src="{{ ../site.baseurl }}/assets/ios.png"/> iOS (Objective-C)
             </a>
-          </div>
         {{/if}}
       {{/each}}
     </div>

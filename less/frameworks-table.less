@@ -1,14 +1,20 @@
-.background-left-band(@color) {
+.background-bands(@left-band-color, @right-band-color) {
   background-color: white;
-  border-left: 15px solid @color;
-  border-right: 15px solid @gray-lighter;
+  border-left: 15px solid @left-band-color;
+  border-right: 15px solid @right-band-color;
 }
 
 .framework-menu {
   background-color: @gray-lighter;
-  padding: @frameworksTablePadding * 2;
+  padding: @frameworksTablePadding * 2  @frameworksTablePadding * 3;
+  
+  h2 {
+    margin-top: 12px;
+  }
 
   .framework {
+    display: block;
+    
     img {
       width: 40px;
       height: 40px;
@@ -35,30 +41,32 @@
     margin-top: @frameworksTablePadding;
   }
 
-  @media (max-width: @screen-xs-max) {
+  @media (max-width: @screen-xs-max) {    
+    padding: @frameworksTablePadding;
+  
     .framework {
       margin-top: 8px;
     }
 
-    // render the background left-hand bar on each individual framework
+    // render the background left-hand and right-hand bar on each individual framework
     .html5-frameworks {
       .framework {
-        .background-left-band(@html5FrameworksColor);
+        .background-bands(@html5FrameworksColor, white);
       }
     }
     .native-frameworks {
       .framework {
-        .background-left-band(@nativeFrameworksColor);
+        .background-bands(@nativeFrameworksColor, white);
       }
     }
     .compile-to-native-frameworks {
       .framework {
-        .background-left-band(@compileToNativeFrameworksColor);
+        .background-bands(@compileToNativeFrameworksColor, white);
       }
     }
   }
 
-  @media (min-width: @screen-xs-max) {
+  @media (min-width: @screen-sm-min) {
     // ensure the left and right columns have the same height
     // see: http://getbootstrap.com.vn/examples/equal-height-columns/
     .row:nth-child(1) {
@@ -84,13 +92,13 @@
 
     // render the background on each section
     .html5-frameworks {
-      .background-left-band(@html5FrameworksColor);
+      .background-bands(@html5FrameworksColor, @gray-lighter);
     }
     .native-frameworks {
-      .background-left-band(@nativeFrameworksColor);
+      .background-bands(@nativeFrameworksColor, white);
     }
     .compile-to-native-frameworks {
-      .background-left-band(@compileToNativeFrameworksColor);
+      .background-bands(@compileToNativeFrameworksColor, white);
     }
   }
 }
