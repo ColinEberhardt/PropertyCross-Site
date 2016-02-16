@@ -1,12 +1,10 @@
-<div id="frameworks" class="row">
-  <div id="frameworks-row-1">
-    <div id="html5-frameworks" class="col-sm-6">
-      <div class="col-sm-12">
-        <h2>HTML5</h2>
-      </div>
+<section class="framework-menu">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12 html5-frameworks">
+      <h2>HTML5</h2>
       {{#each pages}}
         {{#if html5}}
-        <div class="col-sm-6 framework">
+        <div class="framework">
           <a href="{{ page.destination }}">
             <img src="{{ site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}
           </a>
@@ -14,13 +12,11 @@
         {{/if}}
       {{/each}}
     </div>
-    <div id="compile-to-native-frameworks" class="col-sm-6">
-      <div class="col-sm-12">
-        <h2>COMPILE TO NATIVE</h2>
-      </div>
+    <div class="col-sm-6 col-xs-12 compile-to-native-frameworks">
+      <h2>COMPILE TO NATIVE</h2>
       {{#each pages}}
         {{#if compile_to_native}}
-        <div class="col-sm-6 framework">
+        <div class="framework">
           <a href="{{ page.destination }}">
             <img src="{{ site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}
           </a>
@@ -30,19 +26,17 @@
     </div>
   </div>
 
-  <div id="frameworks-row-2">
-    <div id="native-frameworks" class="col-sm-12">
-      <div class="col-sm-2">
-        <h2>NATIVE</h2>
-      </div>
+  <div class="row">
+    <div class="col-xs-12 native-frameworks">
+      <h2>NATIVE</h2>
       {{#each pages}}
         {{#if native}}
-          <div class="col-sm-5 framework">
+          <div class="framework">
             <a href="{{ page.destination }}">
-              <img src="{{ site.baseurl }}/assets/android.png"/> Android (Java) 
+              <img src="{{ site.baseurl }}/assets/android.png"/> Android (Java)
             </a>
           </div>
-          <div class="col-sm-5 framework">
+          <div class="framework">
             <a href="{{ page.destination }}">
               <img src="{{ site.baseurl }}/assets/ios.png"/> iOS (Objective-C)
             </a>

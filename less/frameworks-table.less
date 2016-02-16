@@ -1,99 +1,96 @@
-#html5-frameworks, #compile-to-native-frameworks, #native-frameworks {
-  img {
-    width: 40px;
-    height: 40px;
-    margin: 8px 8px 8px 0;
-  }
+.background-left-band(@color) {
+  background-color: white;
+  border-left: 15px solid @color;
+  border-right: 15px solid @gray-lighter;
 }
 
-#frameworks {
+.framework-menu {
   background-color: @gray-lighter;
   padding: @frameworksTablePadding * 2;
-}
-
-#frameworks-row-1 {
-  display: flex;
-}
-
-#native-frameworks {
-  margin-top: @frameworksTablePadding;
-  background-color: white;
-  background-image: @nativeFrameworksBackground;
-  background-repeat: repeat-y;
-
-  h2 {
-    color: @nativeFrameworksColor;
-    margin: @frameworksTablePadding 0;
-  }
-
-  a {
-    margin-left: 50px;
-  }
-}
-
-#html5-frameworks  {
-  background-image:
-    @rightGutterLightGrayBackground,
-    @html5FrameworksBackground;
-  background-size: @frameworksTablePadding, auto;
-  background-repeat: repeat-y, repeat-y;
-  background-position: right, left;
-
-  h2 {
-    color: @html5FrameworksColor
-  }
-}
-
-#compile-to-native-frameworks {
-  background-image: @compileToNativeFrameworksBackground;
-  background-repeat: repeat-y;
-
-  h2 {
-    color: @compileToNativeFrameworksColor;
-  }
-}
-
-@media (max-width: @screen-xs-max) {
-  #frameworks {
-    padding: @frameworksTablePadding;
-  }
-
-  #frameworks-row-1 {
-    display: block;
-  }
 
   .framework {
-    margin: 10px 0;
-
-    a {
-      margin-left: @frameworksTablePadding;
-      //display: block so that the whole button is clickable on xs screens
-      display: block;
-    }
-  }
-  
-  #html5-frameworks, #compile-to-native-frameworks, #native-frameworks {
-    background-color: transparent;
-    background-image: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #html5-frameworks {    
-    .framework {
-      background-image: @html5FrameworksBackground;
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 8px;
     }
   }
 
-  #compile-to-native-frameworks {
-    .framework {
-      background-image: @compileToNativeFrameworksBackground;
+  .html5-frameworks  {
+    h2 {
+      color: @html5FrameworksColor
     }
   }
 
-  #native-frameworks {
+  .compile-to-native-frameworks  {
+    h2 {
+      color: @compileToNativeFrameworksColor
+    }
+  }
+
+  .native-frameworks {
+    h2 {
+      color: @nativeFrameworksColor
+    }
+    margin-top: @frameworksTablePadding;
+  }
+
+  @media (max-width: @screen-xs-max) {
     .framework {
-      background-image: @nativeFrameworksBackground;
+      margin-top: 8px;
+    }
+
+    // render the background left-hand bar on each individual framework
+    .html5-frameworks {
+      .framework {
+        .background-left-band(@html5FrameworksColor);
+      }
+    }
+    .native-frameworks {
+      .framework {
+        .background-left-band(@nativeFrameworksColor);
+      }
+    }
+    .compile-to-native-frameworks {
+      .framework {
+        .background-left-band(@compileToNativeFrameworksColor);
+      }
+    }
+  }
+
+  @media (min-width: @screen-xs-max) {
+    // ensure the left and right columns have the same height
+    // see: http://getbootstrap.com.vn/examples/equal-height-columns/
+    .row:nth-child(1) {
+      display: flex;
+    }
+
+    // arrange frameworks into two columns
+    .framework {
+      width: 50%;
+      float: left;
+    }
+
+    // for native, create a three column layout
+    .native-frameworks {
+      > * {
+        width: 40%;
+        float: left;
+      }
+      h2 {
+        width: 20%;
+      }
+    }
+
+    // render the background on each section
+    .html5-frameworks {
+      .background-left-band(@html5FrameworksColor);
+    }
+    .native-frameworks {
+      .background-left-band(@nativeFrameworksColor);
+    }
+    .compile-to-native-frameworks {
+      .background-left-band(@compileToNativeFrameworksColor);
     }
   }
 }
