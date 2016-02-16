@@ -1,0 +1,38 @@
+.get-involved {  
+  background-color: @gray-lighter;
+  padding: @grid-gutter-width @grid-gutter-width * 1.5;
+  
+  h4 {
+    color: @link-color
+  }
+  
+  .col-sm-4 {
+    background-color: white;
+  }
+  
+  // Equal height columns
+  .row:nth-child(1) {
+    display: flex;
+  }
+  
+  // Grey borders for middle column and pad it otherwise the text sticks to the borders
+  .col-sm-4:nth-child(2) {
+    padding: 0 @grid-gutter-width / 2;
+    .background-bands(@gray-lighter, @gray-lighter);
+  }
+  
+  @media (max-width: @screen-xs-max) {
+    padding: @grid-gutter-width / 2;
+    
+    // No longer displaying columns
+    .row:nth-child(1) {
+      display: block;
+    }
+    
+    // Every section needs grey borders now
+    .col-sm-4 {
+      margin-top: @grid-gutter-width / 2;
+      .background-bands(@gray-lighter, @gray-lighter);
+    }
+  }
+}
