@@ -11,27 +11,24 @@
   }
   
   // Equal height columns
-  .row:nth-child(1) {
+  .row {
     display: flex;
   }
   
-  // Grey borders for middle column and pad it otherwise the text sticks to the borders
-  .col-sm-4:nth-child(2) {
-    padding: 0 @grid-gutter-width / 2;
-    .background-bands(@gray-lighter, @gray-lighter);
+  .middle {
+    margin: 0 @grid-gutter-width / 2;
   }
   
   @media (max-width: @screen-xs-max) {
-    padding: @grid-gutter-width / 2;
+    padding: 0 @grid-gutter-width / 2 @grid-gutter-width / 2 @grid-gutter-width / 2;
     
     // No longer displaying columns
-    .row:nth-child(1) {
+    .row {
       display: block;
     }
     
-    // Every section needs grey borders now
-    .col-sm-4 {
-      margin-top: @grid-gutter-width / 2;
+    .row > div {
+      margin: @grid-gutter-width / 2 0 0 0;
       .background-bands(@gray-lighter, @gray-lighter);
     }
   }
