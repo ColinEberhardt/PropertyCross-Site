@@ -1,6 +1,6 @@
-<section class="framework-menu">
-  <div class="row">
-    <div class="col-sm-6 col-xs-12 html5-frameworks">
+<section class="row framework-menu">
+  <div class="col-xs-12">
+    <div class="html5-frameworks">
       <h2>HTML5</h2>
       {{#each pages}}
         {{#if html5}}
@@ -10,7 +10,7 @@
         {{/if}}
       {{/each}}
     </div>
-    <div class="col-sm-6 col-xs-12 compile-to-native-frameworks">
+    <div class="compile-to-native-frameworks">
       <h2>COMPILE TO NATIVE</h2>
       {{#each pages}}
         {{#if compile_to_native}}
@@ -21,20 +21,17 @@
       {{/each}}
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-xs-12 native-frameworks">
-      <h2>NATIVE</h2>
-      {{#each pages}}
-        {{#if native}}
-            <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-              <img src="{{ ../site.baseurl }}/assets/android.png"/> Android (Java)
-            </a>
-            <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-              <img src="{{ ../site.baseurl }}/assets/ios.png"/> iOS (Objective-C)
-            </a>
-        {{/if}}
-      {{/each}}
-    </div>
+  <div class="col-xs-12 native-frameworks">
+    <h2>NATIVE</h2>
+    {{#each pages}}
+      {{#if native}}
+          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
+            <img src="{{ ../site.baseurl }}/assets/android.png"/> Android (Java)
+          </a>
+          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
+            <img src="{{ ../site.baseurl }}/assets/ios.png"/> iOS (Objective-C)
+          </a>
+      {{/if}}
+    {{/each}}
   </div>
 </section>

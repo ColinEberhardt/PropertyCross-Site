@@ -1,6 +1,8 @@
-.get-involved {  
+.get-involved { 
+  // Equal height columns
+  display: flex;
   background-color: @gray-lighter;
-  padding: @grid-gutter-width @grid-gutter-width * 1.5;
+  padding: @grid-gutter-width;
   
   h4 {
     color: @link-color
@@ -10,24 +12,18 @@
     background-color: white;
   }
   
-  // Equal height columns
-  .row {
-    display: flex;
-  }
-  
   .middle {
     margin: 0 @grid-gutter-width / 2;
   }
-  
-  @media (max-width: @screen-xs-max) {
-    padding: 0 @grid-gutter-width / 2 @grid-gutter-width / 2 @grid-gutter-width / 2;
-    
+}
+
+@media (max-width: @screen-xs-max) {
+  .get-involved {
     // No longer displaying columns
-    .row {
-      display: block;
-    }
-    
-    .row > div {
+    display: block;
+    padding: 0;
+      
+    .col-xs-12 {
       margin: @grid-gutter-width / 2 0 0 0;
       .background-bands(@gray-lighter, @gray-lighter);
     }

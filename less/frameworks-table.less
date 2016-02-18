@@ -1,6 +1,6 @@
 .framework-menu {
   background-color: @gray-lighter;
-  padding: @frameworksTablePadding * 2  @frameworksTablePadding * 3;
+  padding: @frameworksTablePadding * 2;
   
   h2 {
     margin-top: 12px;
@@ -15,14 +15,22 @@
       margin: 8px;
     }
   }
+  
+  .col-xs-12:nth-child(1) {
+    padding: 0;
+  }
 
   .html5-frameworks  {
+    width: 50%;
+    padding: 0 @frameworksTablePadding;
     h2 {
       color: @html5FrameworksColor
     }
   }
 
   .compile-to-native-frameworks  {
+    width: 50%;
+    padding: 0 @frameworksTablePadding;
     h2 {
       color: @compileToNativeFrameworksColor
     }
@@ -44,16 +52,21 @@
 
     // render the background left-hand and right-hand bar on each individual framework
     .html5-frameworks {
+      width: 100%;
+      padding: 0;
       .framework {
         .background-bands(@html5FrameworksColor, white);
       }
     }
     .native-frameworks {
+      padding: 0;
       .framework {
         .background-bands(@nativeFrameworksColor, white);
       }
     }
     .compile-to-native-frameworks {
+      width: 100%;
+      padding: 0;
       .framework {
         .background-bands(@compileToNativeFrameworksColor, white);
       }
@@ -63,7 +76,7 @@
   @media (min-width: @screen-sm-min) {
     // ensure the left and right columns have the same height
     // see: http://getbootstrap.com.vn/examples/equal-height-columns/
-    .row:nth-child(1) {
+    .col-xs-12:nth-child(1) {
       display: flex;
     }
 
