@@ -1,0 +1,93 @@
+header {
+  padding-top: @grid-gutter-width / 2;
+  
+  .header-main {
+    z-index: 1;
+    padding: 0 @grid-gutter-width;
+    // Negative margin to position the logo on top of the gray background
+    margin-bottom: -22px;
+  } 
+
+  .header-message {
+    background-color: @gray-lighter;
+    height: 60px;
+    
+    i {
+      display: block;
+      // Align the text with the logo above
+      margin-top: 35px;
+      margin-left: 110px;
+    }
+  }
+  
+  .btn {
+    width: 140px;
+    margin: 22px 0 0 10px;
+  }
+}
+
+// Positioning corrections for MD screens
+@media(max-width: @screen-md-max) {
+  header {    
+    .logo {
+      width: @logo-md-size;
+    }
+    
+    .header-main {
+      margin-bottom: -20px;
+    }    
+    
+    .header-message {
+      i {
+        margin-left: 100px;
+      }
+    }
+    
+    .btn {
+      margin-top: 15px;
+    }
+  }
+}
+
+// Positioning corrections for SM screens
+@media(max-width: @screen-sm-max) {
+  header {    
+    .logo {
+      width: @logo-sm-size;
+    }
+    
+    .header-main {
+      margin-bottom: -15px;
+      //need the extra space from the padding
+      padding-right: 0;
+    }    
+    
+    .header-message {
+      i {
+        margin-left: 75px;
+      }
+    }
+    
+    .btn {
+      width: 120px;
+      font-size: @font-size-h6;
+      margin-top: 2px;
+    }    
+  }
+}
+
+// Positioning corrections for XS screens
+@media(max-width: @screen-xs-max) {
+  header {
+    .header-message {
+      i {
+      margin-left: 0;
+      }
+    }
+  
+    .header-main, .header-message {
+      padding: 0;
+      text-align: center;
+    }
+  }
+}

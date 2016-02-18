@@ -43,8 +43,9 @@
     margin-top: @frameworksTablePadding;
   }
 
-  @media (max-width: @screen-xs-max) {    
-    padding: @frameworksTablePadding;
+  @media (max-width: @screen-xs-max) {
+    // the header text is wrapped on XS screens so we need some extra padding on the top
+    padding: @grid-gutter-width @frameworksTablePadding @frameworksTablePadding @frameworksTablePadding;
   
     .framework {
       margin-top: 8px;
@@ -66,7 +67,7 @@
     }
     .compile-to-native-frameworks {
       width: 100%;
-      padding: 0;
+      padding: @frameworksTablePadding 0 0 0;
       .framework {
         .background-bands(@compileToNativeFrameworksColor, white);
       }
