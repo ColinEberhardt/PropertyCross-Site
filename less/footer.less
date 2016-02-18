@@ -1,0 +1,40 @@
+footer {
+  background-color: @gray-lighter;
+  padding: @grid-gutter-width / 2 @grid-gutter-width;
+  
+  .profile {
+    background-color: @profileBackground;
+    background-clip: content-box;
+    margin-bottom: @grid-gutter-width / 2;
+    // align with content above
+    padding-left: 0;
+  }
+  
+  .profile-image{
+    float:left;
+  }
+  
+  .profile-info{
+    float:left;
+    padding: 8px 0 0 15px;
+    font-size: @font-size-h6;
+  }
+}
+
+@media(max-width: @screen-xs-max){
+  footer {
+    padding: @grid-gutter-width / 2;
+    // can't use multiple colors
+    background-image: linear-gradient(white, white) , linear-gradient(@gray-lighter, @gray-lighter);
+    background-clip: content-box , padding-box;
+    
+    .footer-intro {
+      padding: 0 @grid-gutter-width / 2;
+    }
+    
+    .profile {
+      // align with content above
+      padding-left: @grid-gutter-width / 2;
+    }
+  }
+}
