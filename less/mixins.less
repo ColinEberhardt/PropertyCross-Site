@@ -3,3 +3,23 @@
   border-left: 15px solid @left-band-color;
   border-right: 15px solid @right-band-color;
 }
+
+.position-header(@logo-width, @logo-bottom-margin, @message-left-margin, @btn-top-margin) {
+  .logo {
+    width: @logo-width;
+  }
+  
+  .header-main {
+    margin-bottom: @logo-bottom-margin;
+  }
+  
+  .header-message {
+    i {
+      margin-left: @message-left-margin;
+    }
+  }
+  
+  .btn {
+    margin-top: @btn-top-margin;
+  }
+}
