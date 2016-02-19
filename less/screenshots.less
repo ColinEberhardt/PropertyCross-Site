@@ -1,0 +1,39 @@
+.screenshots {
+  .separator(@body-color);
+  padding-bottom: 15px;
+  
+  .screenshots-header {
+    background-color: @gray-lighter;
+    
+    h1 {
+      margin: 0;
+      padding: 10px;
+    }
+  }
+  
+  .platform, .btn {
+    margin-top: @grid-gutter-width / 2;
+  }
+  
+  .screenshot {
+    .make-xs-column(12);
+    .make-sm-column(6);
+    .make-md-column(3);
+    
+    text-align: center;
+    
+    img {
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      .box-shadow(0 5px 10px rgba(0,0,0,.2));
+    }
+  }
+}
+
+@media(max-width: @screen-xs-max) {
+  .screenshots {
+    .screenshots-header, .platform {
+      text-align: center;
+    }
+  }
+}

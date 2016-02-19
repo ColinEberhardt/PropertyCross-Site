@@ -1,1 +1,12 @@
-<h2>Screenshots for framework go here</h2>
+<section class="row screenshots">
+  <div class="col-xs-12 screenshots-header">
+    <h1>Screenshots</h1>
+  </div>
+  {{#if platforms.android }}
+    {{>screenshots_row platform = "android" hasDownloads = downloads.android }}
+  {{/if}}
+  
+  {{#if platforms.ios }}
+    {{>screenshots_row platform = "ios" hasDownloads = downloads.ios }}
+  {{/if}}
+</section>

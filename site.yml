@@ -9,7 +9,7 @@ platforms:
   ios: iOS
 
 extensions:
-  android: apk
-  ios: ipa
+  android: APK
+  ios: IPA
 
 blogurl: http://blog.tastejs.com/
