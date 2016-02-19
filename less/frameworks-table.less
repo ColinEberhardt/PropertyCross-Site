@@ -8,6 +8,13 @@
 
   .framework {
     display: block;
+    color: @body-color;
+    font-size: 16px;
+    font-weight: @font-weight-light;
+    
+    span {
+      font-size: 12px;
+    }
     
     img {
       width: 40px;
@@ -23,7 +30,7 @@
   .html5-frameworks  {
     width: 50%;
     padding: 0 @frameworksTablePadding;
-    h2 {
+    h2, span {
       color: @html5FrameworksColor
     }
   }
@@ -31,13 +38,13 @@
   .compile-to-native-frameworks  {
     width: 50%;
     padding: 0 @frameworksTablePadding;
-    h2 {
+    h2, span {
       color: @compileToNativeFrameworksColor
     }
   }
 
   .native-frameworks {
-    h2 {
+    h2, span {
       color: @nativeFrameworksColor
     }
     margin-top: @frameworksTablePadding;
@@ -89,12 +96,13 @@
 
     // for native, create a three column layout
     .native-frameworks {
-      > * {
-        width: 40%;
+      a {
         float: left;
+        width: 88%;
       }
       h2 {
-        width: 20%;
+        float: left;
+        width: 12%;
       }
     }
 

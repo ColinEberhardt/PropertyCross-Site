@@ -6,6 +6,7 @@ compile_to_native: true
 platforms:
   android: true
   ios: true
+language: C++
 contributors:
   - { name: 'Simon (Deadolus)', username: Deadolus }
 downloads:

@@ -6,6 +6,7 @@ html5: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'Matthew Dunsdon', username: matthewdunsdon, hash: 98973325557527a01535a91933e7310a }
 downloads:

@@ -6,6 +6,7 @@ compile_to_native: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'Chris Price', username: chrisprice, hash: b6fe36176ec7c9475374a5cd3b7bef1a }
 downloads:

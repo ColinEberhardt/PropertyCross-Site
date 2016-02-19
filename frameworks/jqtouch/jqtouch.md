@@ -6,6 +6,7 @@ html5: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'Mark Rhodes', username: markrhodes }
 downloads:

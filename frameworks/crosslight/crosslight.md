@@ -2,10 +2,11 @@
 layout: framework
 title: Crosslight
 framework: crosslight
-html5: true
+compile_to_native: true
 platforms:
   android: true
   ios: true
+language: C#
 contributors:
   - { name: 'Jimmy Petrus', username: jimmyps }
 links:

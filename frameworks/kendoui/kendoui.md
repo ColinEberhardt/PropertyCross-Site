@@ -6,6 +6,7 @@ html5: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'Joel Smith', username: joelwilliamsmith, hash: 6e5b209f9dced24655066d1128a13964 }
 downloads:

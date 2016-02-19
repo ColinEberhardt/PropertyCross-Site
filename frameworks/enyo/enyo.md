@@ -6,6 +6,7 @@ html5: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'Art Dahm', username: dragongears, hash: 8b162dd0a4db89f2b763a5f4be389ef2 }
   - { name: 'Dave Freeman', username: sugardave, hash: 8fb6bbed9a2341ce15f1ab3ea13b2633 }

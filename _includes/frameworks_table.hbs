@@ -5,7 +5,7 @@
       {{#each pages}}
         {{#if html5}}
           <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-            <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}
+            <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }} <span> [{{ language }}]</span>
           </a>
         {{/if}}
       {{/each}}
@@ -15,7 +15,7 @@
       {{#each pages}}
         {{#if compile_to_native}}
           <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-            <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}
+            <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}<span> [{{ language }}]</span>
           </a>
         {{/if}}
       {{/each}}
@@ -26,10 +26,7 @@
     {{#each pages}}
       {{#if native}}
           <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-            <img src="{{ ../site.baseurl }}/assets/android.png"/> Android (Java)
-          </a>
-          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-            <img src="{{ ../site.baseurl }}/assets/ios.png"/> iOS (Objective-C)
+            <img src="{{ ../site.baseurl }}/assets/android.png"/><img src="{{ ../site.baseurl }}/assets/ios.png"/> Android and iOS<span class="hidden-xs"> [Java and Objective-C]</span>
           </a>
       {{/if}}
     {{/each}}

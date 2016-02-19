@@ -6,6 +6,7 @@ compile_to_native: true
 platforms:
   android: true
   ios: true
+language: Object Pascal
 contributors:
   - { name: Embarcadero, url: 'http://embarcadero.com' }
   - { name: 'Stephen Ball', username: DelphiABall, hash: 5228daef33bc155d8b47a4710db543e5 }

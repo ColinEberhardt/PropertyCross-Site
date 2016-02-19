@@ -6,6 +6,7 @@ compile_to_native: true
 platforms:
   android: true
   ios: true
+language: Ruby
 contributors:
   - { name: Vinothini, username: VinothiniBalakrishnan }
 downloads:

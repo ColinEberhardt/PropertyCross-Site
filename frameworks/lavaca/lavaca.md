@@ -6,6 +6,7 @@ html5: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'George Henderson', username: georgehenderson, hash: a7c81a624fd68bde3e032853c8af7dbe }
 downloads:

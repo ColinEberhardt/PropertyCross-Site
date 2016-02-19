@@ -6,6 +6,7 @@ html5: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'Remi Grumeau', username: remi-grumeau, hash: f739f02d0af4ab1f8cb745b5677de157 }
 downloads:

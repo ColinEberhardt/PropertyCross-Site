@@ -12,10 +12,12 @@ header {
     background-color: @gray-lighter;
     height: 60px;
     
-    i {
+    h2 {
       display: block;
       // Align the text with the logo above
       margin-top: 35px;
+      font-weight: @font-weight-light;
+      font-style: italic;
     }
   }
   
@@ -53,6 +55,12 @@ header {
 @media(max-width: @screen-xs-max) {
   header {
     .position-header(@logo-xs-size, -12px, 0, 0);
+    
+    h2 {
+      // 20px is too large for XS screens
+      font-size: 16px;
+      padding: 0 @grid-gutter-width / 2;
+    }
   
     .header-main, .header-message {
       padding: 0;

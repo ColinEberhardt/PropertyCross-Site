@@ -6,6 +6,7 @@ compile_to_native: true
 platforms:
   android: true
   ios: true
+language: Java
 contributors:
   - { name: 'Colin Eberhardt', username: colineberhardt, hash: 458f2e0d08d4114f8b323798cfea141d }
   - { name: 'Steve Blair', username: SteveBlair }

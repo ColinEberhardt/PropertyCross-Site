@@ -6,6 +6,7 @@ html5: true
 platforms:
   android: true
   ios: true
+language: JS
 contributors:
   - { name: 'Steven Hall', username: emmerich, hash: 30187520d3181c674d7b7ecbcbbf48b1 }
 downloads:

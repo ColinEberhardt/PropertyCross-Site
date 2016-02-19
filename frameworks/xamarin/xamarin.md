@@ -6,6 +6,7 @@ compile_to_native: true
 platforms:
   android: true
   ios: true
+language: C#
 contributors:
   - { name: 'Colin Eberhardt', username: colineberhardt, hash: 458f2e0d08d4114f8b323798cfea141d }
   - { name: 'Sam Hogarth', username: sh1989, hash: d4534a4d64ddf89c318221d9f0e766da }
