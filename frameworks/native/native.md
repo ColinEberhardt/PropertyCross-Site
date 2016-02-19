@@ -11,7 +11,7 @@ contributors:
   - { name: 'Sam Hogarth', username: sh1989, hash: d4534a4d64ddf89c318221d9f0e766da }
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-native-4eb213e84f1cc5daa11c3192b9ec68c145a32e61.apk'
-link:
+links:
   - { title: 'Apple Developer Library', url: 'https://developer.apple.com/library/', description: 'Find guides, reference, and sample code for developing with the latest tools and technologies for Apple platforms.' }
   - { title: 'Android Guides', url: 'http://developer.android.com/guide/index.html', description: 'Detailed guides and advice on how to develop apps for Android.' }
   - { title: 'iOS Development Guides', url: 'https://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides', description: 'Guides on a wide variety of iOS related programming topics.' }

@@ -1,1 +1,12 @@
-<h3>Related links for frameworks go here</h3>
+<h3>Related links</h3>
+
+{{#each links}}
+  <p>
+    <a href="{{ url }}">{{ title }}</a>{{ description }}
+  </p>
+{{/each}}
+
+<p>
+  <a href="{{ site.githuburl }}/issues?labels={{ framework }}&state=open" class="btn btn-large btn-primary github-issue-count-button" type="button">
+  </a>
+</p>

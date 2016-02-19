@@ -1,6 +1,39 @@
 ---
 layout: default
 ---
-<h2>Framework page</h2>
 
-{{> screenshots }}
+{{>header }}
+
+{{>framework_info }}
+
+<script type="text/javascript">
+    !function() {
+        var buttons = document.getElementsByClassName('github-issue-count-button');
+        for (var i = 0, button = buttons[i]; i < buttons.length; button = buttons[++i]) {
+            var url = button.href
+                    .replace(/https:\/\/github\.com/, 'https://api.github.com/repos')
+                    .replace(/per_page=[0-9]+/g, '');
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onload = function(e) {
+                var count = JSON.parse(e.target.responseText).length;
+                this.classList.add('issue-count-' + count);
+                
+                var label;
+                
+                if(count === 0) {
+                  label = "No known issues";
+                } else if(count === 1) {
+                  label = "1 Known issue";
+                } else if(count < 30) {
+                  label = count + " Known issues";
+                } else {
+                  label = "30+ Known issues";
+                }
+                
+                this.innerHTML = label;
+            }.bind(button);
+            xhr.send();
+        }
+    }();
+</script>
