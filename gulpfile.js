@@ -30,6 +30,7 @@ gulp.task('copy', function() {
 // Runs tinyssg
 gulp.task('tinyssg', function() {
   const config = {
+      includesPattern: ['_includes/**/*.*'],
       filePattern: ['index.html', 'frameworks/**/*.md'],
       globalPattern: ['site.yml'],
       globalData: {site: {baseurl: 'http://localhost:8080'}}
@@ -39,6 +40,7 @@ gulp.task('tinyssg', function() {
 
 gulp.task('tinyssg-production', function() {
   const config = {
+      includesPattern: ['_includes/**/*.*'],
       filePattern: ['index.html', 'frameworks/**/*.md'],
       globalPattern: ['site.yml']
     };
