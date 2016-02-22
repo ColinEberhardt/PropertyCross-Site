@@ -8,6 +8,10 @@ layout: default
 
 {{>screenshots }}
 
+{{#if contributors }}
+  {{>contributors }}
+{{/if}}
+
 {{>frameworks_table }}
 
 <script type="text/javascript">
@@ -23,15 +27,14 @@ layout: default
                 var count = JSON.parse(e.target.responseText).length;
                 this.classList.add('issue-count-' + count);
                 
-                var label;
+                // 0 or undefined
+                var label = "No known issues";
                 
-                if(count === 0) {
-                  label = "No known issues";
-                } else if(count === 1) {
+                if(count === 1) {
                   label = "1 Known issue";
-                } else if(count < 30) {
+                } else if(count > 1 && count <= 30) {
                   label = count + " Known issues";
-                } else {
+                } else if(count > 30) {
                   label = "30+ Known issues";
                 }
                 

@@ -1,0 +1,25 @@
+<section class="row contributors">
+  <h4>Framework example contributed by</h4>
+  {{#each contributors }}
+    <div class="profile">
+    {{#if username }}
+      <div class="profile-image">
+        {{#if hash }}
+          <img src="http://www.gravatar.com/avatar/{{ hash }}"/>
+        {{ else }}
+          <img class="github-img" src="{{ ../site.baseurl }}/assets/github.png"/>
+        {{/if }}
+      </div>
+      <div class="profile-info">
+        <a href="https://github.com/{{ username }}/">{{ name }}</a>
+      </div>
+    </div>  
+    {{ else }}
+      {{#if url }}
+        <div class="profile-blank">
+          <a href="{{ contributor.url }}">{{ name }}</a>
+        </div>
+      {{/if }}
+    {{/if }}
+  {{/each }}
+</section>
