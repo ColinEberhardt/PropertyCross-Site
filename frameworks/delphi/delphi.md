@@ -12,10 +12,10 @@ contributors:
   - { name: 'Stephen Ball', username: DelphiABall, hash: 5228daef33bc155d8b47a4710db543e5 }
 downloads: {  }
 links:
-  - { title: 'Official Firemonkey Website', url: 'https://www.embarcadero.com/products/rad-studio/firemonkey', description: 'The official Firemonkey website provides useful articles and information about the framework.'}
-  - { title: 'Official Firemonkey Guide', url: 'http://docwiki.embarcadero.com/RADStudio/XE8/en/FireMonkey_Applications_Guide', description: 'An excellent guide that can be used to get started with Firemonkey.'}
-  - { title: 'Official Firemonkey Twitter', url: 'https://twitter.com/firemonkeyteam', description: 'The Firemonkey Twitter account provides information on future releases, framework features and meetups. It also posts useful articles related to the framework.'}
-  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/firemonkey', description: 'Helpful questions and answers relating to Firemonkey on Stackoverflow.'}
+  - { title: 'Official Firemonkey Website', url: 'https://www.embarcadero.com/products/rad-studio/firemonkey', description: '- The official Firemonkey website provides useful articles and information about the framework.'}
+  - { title: 'Official Firemonkey Guide', url: 'http://docwiki.embarcadero.com/RADStudio/XE8/en/FireMonkey_Applications_Guide', description: '- An excellent guide that can be used to get started with Firemonkey.'}
+  - { title: 'Official Firemonkey Twitter', url: 'https://twitter.com/firemonkeyteam', description: '- The Firemonkey Twitter account provides information on future releases, framework features and meetups. It also posts useful articles related to the framework.'}
+  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/firemonkey', description: '- Helpful questions and answers relating to Firemonkey on Stackoverflow.'}
 
 ---
 

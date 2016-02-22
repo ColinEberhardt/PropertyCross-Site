@@ -13,10 +13,10 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-intelappframework-b15e5714b3858b0ce154f1e5925b2cb815ef0afe.apk'
 phonegap: true
 links:
-  - { title: 'API Reference', url: 'https://app-framework-software.intel.com/api.php', description: 'Provides a detailed description of all the exposed library calls.' }
-  - { title: 'Official Documentation', url: 'https://app-framework-software.intel.com/documentation.php', description: 'The official app framework documentation.' }
-  - { title: 'Official forums', url: 'https://software.intel.com/en-us/forums/app-framework', description: 'A platform to ask and answer questions related to the framework with support from Intel employees.' }
-  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/appframework', description: 'Stackoverflow questions and answers relating to Intel App Framework.' }
+  - { title: 'API Reference', url: 'https://app-framework-software.intel.com/api.php', description: '- Provides a detailed description of all the exposed library calls.' }
+  - { title: 'Official Documentation', url: 'https://app-framework-software.intel.com/documentation.php', description: '- The official app framework documentation.' }
+  - { title: 'Official forums', url: 'https://software.intel.com/en-us/forums/app-framework', description: '- A platform to ask and answer questions related to the framework with support from Intel employees.' }
+  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/appframework', description: '- Stackoverflow questions and answers relating to Intel App Framework.' }
 
 ---
 

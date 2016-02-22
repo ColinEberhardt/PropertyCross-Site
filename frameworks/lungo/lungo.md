@@ -13,10 +13,10 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-lungo-f8254593eed58871434d7101c67428f719f2b0ec.apk'
 phonegap: true
 links:
-  - { title: 'Official Website', url: 'http://lungo.tapquo.com/', description: 'Lungo''s official website hosts a number of useful resources including its forum and documentation pages.' }
-  - { title: 'Source Code', url: 'https://github.com/tapquo/Lungo.js/', description: 'Lungo''s full source code is available on Github. ' }
-  - { title: 'Getting started guide', url: 'https://github.com/tapquo/Lungo.js/blob/master/README.md', description: 'A comprehensive introduction to the framework covering all the basics and some more advanced features.' }
-  - { title: 'LungoJS on Twitter', url: 'https://twitter.com/lungojs', description: 'The twitter account is no longer active but contains links to a number of projects produced using Lungo.' }
+  - { title: 'Official Website', url: 'http://lungo.tapquo.com/', description: '- Lungo''s official website hosts a number of useful resources including its forum and documentation pages.' }
+  - { title: 'Source Code', url: 'https://github.com/tapquo/Lungo.js/', description: '- Lungo''s full source code is available on Github. ' }
+  - { title: 'Getting started guide', url: 'https://github.com/tapquo/Lungo.js/blob/master/README.md', description: '- A comprehensive introduction to the framework covering all the basics and some more advanced features.' }
+  - { title: 'LungoJS on Twitter', url: 'https://twitter.com/lungojs', description: '- The twitter account is no longer active but contains links to a number of projects produced using Lungo.' }
 
 ---
 

@@ -12,10 +12,10 @@ contributors:
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-air-02f15438ddcf5b30196605abcdfd5d1548c6c1c2.apk'
 links:
-  - { title: 'Official Documentation', url: 'http://www.adobe.com/devnet/air/documentation.html', description: 'The official Adobe documentation for AIR.'}
-  - { title: 'Official Guides', url: 'http://www.adobe.com/devnet/air.html', description: 'A collection of guides covering a wide range Adobe AIR topics.'}
-  - { title: 'AIR Twitter', url: 'https://twitter.com/air', description: 'The official Adobe AIR Twitter account.'}
-  - { title: 'AIR Questions on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/air', description: 'Questions and answers relating to Adobe AIR on Stackoverflow.'}
+  - { title: 'Official Documentation', url: 'http://www.adobe.com/devnet/air/documentation.html', description: '- The official Adobe documentation for AIR.'}
+  - { title: 'Official Guides', url: 'http://www.adobe.com/devnet/air.html', description: '- A collection of guides covering a wide range Adobe AIR topics.'}
+  - { title: 'AIR Twitter', url: 'https://twitter.com/air', description: '- The official Adobe AIR Twitter account.'}
+  - { title: 'AIR Questions on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/air', description: '- Questions and answers relating to Adobe AIR on Stackoverflow.'}
 ---
 
 This is an implementation of the PropertyCross application using Adobe Integrated Runtime (AIR), the SDK for which is freely available from [Adobe](http://www.adobe.com/devnet/air/air-sdk-download.html).  It also uses the Flex and Parsley frameworks, both of which are also freely available from [Apache](http://incubator.apache.org/flex/) and [Spicefactory](http://www.spicefactory.org/parsley/).

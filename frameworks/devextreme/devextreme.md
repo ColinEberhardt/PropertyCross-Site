@@ -13,11 +13,11 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-phonejs-c4166dabfd57fdc2e78e3b4024ba62195405d114.apk'
 phonegap: true
 links:
-  - { title: 'Official Documentation', url: 'http://js.devexpress.com/Documentation/Overview/', description: 'The official documentation for DevExtreme.' }
-  - { title: 'API Reference', url: 'http://js.devexpress.com/Documentation/ApiReference/UI_Widgets/?version=15_2', description: 'API Reference for version 15.2.' }
-  - { title: 'Official Guides', url: 'http://js.devexpress.com/Documentation/Guide/?version=15_2', description: 'Official guides for version 15.2.' }
-  - { title: 'DevExtreme Twitter', url: 'https://twitter.com/devextreme', description: 'The official DevExtreme Twitter account.' }
-  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/devextreme', description: 'A collection of Stackoverflow questions and answers relating to DevExtreme.' }
+  - { title: 'Official Documentation', url: 'http://js.devexpress.com/Documentation/Overview/', description: '- The official documentation for DevExtreme.' }
+  - { title: 'API Reference', url: 'http://js.devexpress.com/Documentation/ApiReference/UI_Widgets/?version=15_2', description: '- API Reference for version 15.2.' }
+  - { title: 'Official Guides', url: 'http://js.devexpress.com/Documentation/Guide/?version=15_2', description: '- Official guides for version 15.2.' }
+  - { title: 'DevExtreme Twitter', url: 'https://twitter.com/devextreme', description: '- The official DevExtreme Twitter account.' }
+  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/devextreme', description: '- A collection of Stackoverflow questions and answers relating to DevExtreme.' }
 
 ---
 

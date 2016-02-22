@@ -13,11 +13,11 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-kendoui-e4be8c56f55bfa8a83914b6917adeb66d098609d.apk'
 phonegap: true
 links:
-  - { title: 'Official Website', url: 'http://www.telerik.com/kendo-ui', description: 'The official website is a great place to get a feel for the framework and find great documentation, guides and release notes.' }
-  - { title: 'KendoUI Guides', url: 'http://www.kendouimobileguide.com/', description: 'A website dedicated to providing guides for developers using KendoUI.' }
-  - { title: 'KendoUI on Twitter', url: 'https://twitter.com/kendoui', description: 'The official Twitter account posts lots of useful information about future releases and framework features.' }
-  - { title: 'Forums', url: 'http://www.telerik.com/forums/kendo-ui', description: 'The forums are active and frequented by KendoUI experts who post useful information and answer questions.' }
-  - { title: 'Stackoverflow questions', url: 'http://stackoverflow.com/questions/tagged/kendo-ui', description: 'A variety of questions and answers relating to the framework on Stackoverflow.' }
+  - { title: 'Official Website', url: 'http://www.telerik.com/kendo-ui', description: '- The official website is a great place to get a feel for the framework and find great documentation, guides and release notes.' }
+  - { title: 'KendoUI Guides', url: 'http://www.kendouimobileguide.com/', description: '- A website dedicated to providing guides for developers using KendoUI.' }
+  - { title: 'KendoUI on Twitter', url: 'https://twitter.com/kendoui', description: '- The official Twitter account posts lots of useful information about future releases and framework features.' }
+  - { title: 'Forums', url: 'http://www.telerik.com/forums/kendo-ui', description: '- The forums are active and frequented by KendoUI experts who post useful information and answer questions.' }
+  - { title: 'Stackoverflow questions', url: 'http://stackoverflow.com/questions/tagged/kendo-ui', description: '- A variety of questions and answers relating to the framework on Stackoverflow.' }
 
 ---
 

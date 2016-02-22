@@ -13,11 +13,11 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-lavaca-ace9b0db34fd6077ce36c42840b1740df34c783.apk'
 phonegap: true
 links:
-  - { title: 'Official Documentation', url: 'http://getlavaca.com/assets/doc/', description: 'Lavaca''s official documentation is extremely detailed and enormously helpful to Lavaca developers.' }
-  - { title: 'Source Code', url: 'https://github.com/mutualmobile/lavaca', description: 'The full Lavaca source code is available on Github.' }
-  - { title: 'Getting Started Guide', url: 'http://getlavaca.com/#/guide#@1', description: 'A comprehensive getting started guide that covers the fundamentals of Lavaca.' }
-  - { title: 'Example Applications', url: 'http://getlavaca.com/#/examples#@2', description: 'A showcase of applications created using Lavaca.' }
-  - { title: 'Lavaca on Twitter', url: 'https://twitter.com/getlavaca', description: 'Although this is no longer active it may be worth following in case it becomes active once again in the future.' }
+  - { title: 'Official Documentation', url: 'http://getlavaca.com/assets/doc/', description: '- Lavaca''s official documentation is extremely detailed and enormously helpful to Lavaca developers.' }
+  - { title: 'Source Code', url: 'https://github.com/mutualmobile/lavaca', description: '- The full Lavaca source code is available on Github.' }
+  - { title: 'Getting Started Guide', url: 'http://getlavaca.com/#/guide#@1', description: '- A comprehensive getting started guide that covers the fundamentals of Lavaca.' }
+  - { title: 'Example Applications', url: 'http://getlavaca.com/#/examples#@2', description: '- A showcase of applications created using Lavaca.' }
+  - { title: 'Lavaca on Twitter', url: 'https://twitter.com/getlavaca', description: '- Although this is no longer active it may be worth following in case it becomes active once again in the future.' }
 
 ---
 

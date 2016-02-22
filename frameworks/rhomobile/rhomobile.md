@@ -12,11 +12,11 @@ contributors:
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-rhomobile-719f1c8bfd54d55d3e4afc173624611f5c125dad.apk'
 links:
-  - { title: 'Blog', url: 'http://blog.rhomobile.com/', description: 'Rhomobile''s blog is updated relatively frequently with information about new releases.' }
-  - { title: 'Official Guides', url: 'http://docs.rhomobile.com/en/4.0.0/guide/welcome', description: 'Guides describing how to perform common tasks using Rhomobile. ' }
-  - { title: 'Rhomobile on Twitter', url: 'https://twitter.com/RhoMobile', description: 'Rhomobile''s Twitter regularly posts interesting articles related to the framework and Android in general. It can also be used to keep up to date with releases.' }
-  - { title: 'Forum', url: 'https://developer.zebra.com/community/rhomobile-suite/rhomobile-community', description: 'The Rhomobile forums are reasonably active and are a great place to post your experience with the framework and to seek or provide help.' }
-  - { title: 'Rhomobile on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/rhomobile', description: 'A wide variety of questions and answers relating to Rhomobile.' }
+  - { title: 'Blog', url: 'http://blog.rhomobile.com/', description: '- Rhomobile''s blog is updated relatively frequently with information about new releases.' }
+  - { title: 'Official Guides', url: 'http://docs.rhomobile.com/en/4.0.0/guide/welcome', description: '- Guides describing how to perform common tasks using Rhomobile. ' }
+  - { title: 'Rhomobile on Twitter', url: 'https://twitter.com/RhoMobile', description: '- Rhomobile''s Twitter regularly posts interesting articles related to the framework and Android in general. It can also be used to keep up to date with releases.' }
+  - { title: 'Forum', url: 'https://developer.zebra.com/community/rhomobile-suite/rhomobile-community', description: '- The Rhomobile forums are reasonably active and are a great place to post your experience with the framework and to seek or provide help.' }
+  - { title: 'Rhomobile on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/rhomobile', description: '- A wide variety of questions and answers relating to Rhomobile.' }
 
 ---
 

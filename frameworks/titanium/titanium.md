@@ -12,10 +12,10 @@ contributors:
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross_Titanium.apk'
 links:
-  - { title: 'Official Website', url: 'http://www.appcelerator.com', description: 'The Appcelerator website hosts lots of useful resources including documentation and the Appcelerator blog.' }
-  - { title: 'Quick Start Guide', url: 'http://docs.appcelerator.com/platform/latest/#!/guide/Quick_Start', description: 'A comprehensive quick start guide that is an incredibly useful resource to developers looking to create an app with Titanium.' }
-  - { title: 'Appcelerator on Twitter', url: 'https://twitter.com/appcelerator', description: 'Regularly updated with information about releases, features and links to articles.' }
-  - { title: 'Titanium on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/titanium', description: 'A variety of questions and answers related to Titanium development on Stackoverflow.' }
+  - { title: 'Official Website', url: 'http://www.appcelerator.com', description: '- The Appcelerator website hosts lots of useful resources including documentation and the Appcelerator blog.' }
+  - { title: 'Quick Start Guide', url: 'http://docs.appcelerator.com/platform/latest/#!/guide/Quick_Start', description: '- A comprehensive quick start guide that is an incredibly useful resource to developers looking to create an app with Titanium.' }
+  - { title: 'Appcelerator on Twitter', url: 'https://twitter.com/appcelerator', description: '- Regularly updated with information about releases, features and links to articles.' }
+  - { title: 'Titanium on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/titanium', description: '- A variety of questions and answers related to Titanium development on Stackoverflow.' }
   
 ---
 

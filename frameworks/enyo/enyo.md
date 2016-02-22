@@ -14,12 +14,12 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-enyo-239c763f088732780efe5aa9c0bbb75c76dd2738.apk'
 phonegap: true
 links:
-  - { title: 'Official Website', url: 'http://enyojs.com/', description: 'The official EnyoJS website.' }
-  - { title: 'Documentation', url: 'http://enyojs.com/docs/latest/#/home', description: 'Comprehensive documentation provided by the makers of EnyoJS.' }
-  - { title: 'Developer Guide', url: 'http://enyojs.com/docs/latest/developer-guide/index.html', description: 'The EnyoJS developer guide.' }
-  - { title: 'Forums', url: 'http://forums.enyojs.com/', description: 'The official forums provide updates and a platform for asking and answering questions related to the framework.' }
-  - { title: 'EnyoJS on Twitter', url: 'https://twitter.com/EnyoJS', description: 'The official EnyoJS Twitter account.' }
-  - { title: 'EnyoJS Blog', url: 'http://blog.enyojs.com/', description: 'Updates and information about future releases from the official blog.' }
+  - { title: 'Official Website', url: 'http://enyojs.com/', description: '- The official EnyoJS website.' }
+  - { title: 'Documentation', url: 'http://enyojs.com/docs/latest/#/home', description: '- Comprehensive documentation provided by the makers of EnyoJS.' }
+  - { title: 'Developer Guide', url: 'http://enyojs.com/docs/latest/developer-guide/index.html', description: '- The EnyoJS developer guide.' }
+  - { title: 'Forums', url: 'http://forums.enyojs.com/', description: '- The official forums provide updates and a platform for asking and answering questions related to the framework.' }
+  - { title: 'EnyoJS on Twitter', url: 'https://twitter.com/EnyoJS', description: '- The official EnyoJS Twitter account.' }
+  - { title: 'EnyoJS Blog', url: 'http://blog.enyojs.com/', description: '- Updates and information about future releases from the official blog.' }
 
 ---
 

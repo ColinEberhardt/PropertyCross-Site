@@ -14,12 +14,12 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-jquerymobile-2f27e2e7f5dff03000a70364117d90c08ffe8b78.apk'
 phonegap: true
 links:
-  - { title: 'Source Code', url: 'https://github.com/jquery/jquery-mobile', description: 'The full project source code is available on GitHub.' }
-  - { title: 'Blog', url: 'http://blog.jquerymobile.com/', description: 'The official blog contains plenty of useful information about future releases and jQuery mobile features.' }
-  - { title: 'Getting started guide', url: 'http://demos.jquerymobile.com/1.2.0/docs/about/getting-started.html', description: 'A detailed guide providing the fundamentals of jQuery mobile development.' }
-  - { title: 'Forums', url: 'https://forum.jquery.com/jquery-mobile/', description: 'The official jQuery mobile forum is very active with passionate developers.' }
-  - { title: 'jQuery Mobile on Twitter', url: 'https://twitter.com/jquerymobile', description: 'jQuery mobile''s Twitter account is not updated regularly anymore but has lots of useful articles from the past.' }
-  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/jquery-mobile', description: 'A number of questions and answers relating to jQuery mobile on Stackoverflow.' }
+  - { title: 'Source Code', url: 'https://github.com/jquery/jquery-mobile', description: '- The full project source code is available on GitHub.' }
+  - { title: 'Blog', url: 'http://blog.jquerymobile.com/', description: '- The official blog contains plenty of useful information about future releases and jQuery mobile features.' }
+  - { title: 'Getting started guide', url: 'http://demos.jquerymobile.com/1.2.0/docs/about/getting-started.html', description: '- A detailed guide providing the fundamentals of jQuery mobile development.' }
+  - { title: 'Forums', url: 'https://forum.jquery.com/jquery-mobile/', description: '- The official jQuery mobile forum is very active with passionate developers.' }
+  - { title: 'jQuery Mobile on Twitter', url: 'https://twitter.com/jquerymobile', description: '- jQuery mobile''s Twitter account is not updated regularly anymore but has lots of useful articles from the past.' }
+  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/jquery-mobile', description: '- A number of questions and answers relating to jQuery mobile on Stackoverflow.' }
 
 ---
 

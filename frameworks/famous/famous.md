@@ -13,12 +13,12 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-famous-initial.apk'
 phonegap: true
 links:
-  - { title: 'Official Website', url: 'http://famous.co/', description: 'The official website for the project.'}
-  - { title: 'Blog', url: 'https://blog.famous.org/', description: 'The project''s official blog.'}
-  - { title: 'Documentation', url: 'http://famous.org/docs/', description: 'Official documentation for the Famo.us framework.'}
-  - { title: 'Famo.us on Twitter', url: 'https://twitter.com/befamous', description: 'Regularly posts updates about the framework.'}
-  - { title: 'Introduction to Famo.us', url: 'https://famous.org/framework/hello-framework.html', description: 'Provides useful information aimed at those interested in potentially working with Famo.us.'}
-  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/famo.us', description: 'Questions and answers relating to Famo.us on Stackoverflow.'}
+  - { title: 'Official Website', url: 'http://famous.co/', description: '- The official website for the project.'}
+  - { title: 'Blog', url: 'https://blog.famous.org/', description: '- The project''s official blog.'}
+  - { title: 'Documentation', url: 'http://famous.org/docs/', description: '- Official documentation for the Famo.us framework.'}
+  - { title: 'Famo.us on Twitter', url: 'https://twitter.com/befamous', description: '- Regularly posts updates about the framework.'}
+  - { title: 'Introduction to Famo.us', url: 'https://famous.org/framework/hello-framework.html', description: '- Provides useful information aimed at those interested in potentially working with Famo.us.'}
+  - { title: 'Stackoverflow Questions', url: 'http://stackoverflow.com/questions/tagged/famo.us', description: '- Questions and answers relating to Famo.us on Stackoverflow.'}
 
 ---
 

@@ -12,12 +12,12 @@ contributors:
 downloads: {  }
 phonegap: true
 links:
-  - { title: 'Source Code', url: 'https://github.com/OnsenUI/OnsenUI', description: 'The full source code is available on Github.' }
-  - { title: 'Blog', url: 'https://onsen.io/blog/tags/onsen-ui.html', description: 'OnsenUI''s blog is updated regularly with news about releases, meetups and example apps built using OnsenUI.' }
-  - { title: 'Guide to OnsenUI', url: 'https://onsen.io/guide/overview.html', description: 'A guide explaining all areas of OnsenUI in detail.' }
-  - { title: 'Forum', url: 'https://community.onsen.io/category/2/onsen-ui', description: 'OnsenUI has an active forum where people share their own experiences and questions about OnsenUI.' }
-  - { title: 'OnsenUI on Twitter', url: 'https://twitter.com/Onsen_UI', description: 'Regularly updated with information about releases, features and links to articles.' }
-  - { title: 'OnsenUI on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/onsen-ui', description: 'Questions and answers relating to OnsenUI on Stackoverflow.' }
+  - { title: 'Source Code', url: 'https://github.com/OnsenUI/OnsenUI', description: '- The full source code is available on Github.' }
+  - { title: 'Blog', url: 'https://onsen.io/blog/tags/onsen-ui.html', description: '- OnsenUI''s blog is updated regularly with news about releases, meetups and example apps built using OnsenUI.' }
+  - { title: 'Guide to OnsenUI', url: 'https://onsen.io/guide/overview.html', description: '- A guide explaining all areas of OnsenUI in detail.' }
+  - { title: 'Forum', url: 'https://community.onsen.io/category/2/onsen-ui', description: '- OnsenUI has an active forum where people share their own experiences and questions about OnsenUI.' }
+  - { title: 'OnsenUI on Twitter', url: 'https://twitter.com/Onsen_UI', description: '- Regularly updated with information about releases, features and links to articles.' }
+  - { title: 'OnsenUI on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/onsen-ui', description: '- Questions and answers relating to OnsenUI on Stackoverflow.' }
 
 ---
 

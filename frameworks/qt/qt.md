@@ -12,10 +12,10 @@ contributors:
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross_Qt_armeabi_v7a.apk'
 links:
-  - { title: 'MvvmCross Manifesto', url: 'https://github.com/MvvmCross/MvvmCross/wiki/The-MvvmCross-Manifesto', description: 'It is useful to read this before developing since it gives a good idea of the framework''s design principles.' }
-  - { title: 'MvvmCross Project Wiki', url: 'https://github.com/MvvmCross/MvvmCross/wiki', description: 'A detailed project wiki.' }
-  - { title: 'MvvmCross on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/mvvmcross', description: 'A variety of questions and answers related to MvvmCross development on Stackoverflow.' }
-  - { title: 'MvvmCross on Twitter', url: 'https://twitter.com/MvvmCross', description: 'Regularly updated with information about releases, features and links to articles.' }
+  - { title: 'MvvmCross Manifesto', url: 'https://github.com/MvvmCross/MvvmCross/wiki/The-MvvmCross-Manifesto', description: '- It is useful to read this before developing since it gives a good idea of the framework''s design principles.' }
+  - { title: 'MvvmCross Project Wiki', url: 'https://github.com/MvvmCross/MvvmCross/wiki', description: '- A detailed project wiki.' }
+  - { title: 'MvvmCross on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/mvvmcross', description: '- A variety of questions and answers related to MvvmCross development on Stackoverflow.' }
+  - { title: 'MvvmCross on Twitter', url: 'https://twitter.com/MvvmCross', description: '- Regularly updated with information about releases, features and links to articles.' }
 
 ---
 

@@ -15,10 +15,10 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-senchatouch2-8acbae787d727de5624686c7c2e0afccc26932a4.apk'
 phonegap: true
 links:
-  - { title: 'API Reference', url: 'http://docs.sencha.com/touch/2.0.2/#!/api', description: 'An extensive set of documentation describing the framework''s API.' }
-  - { title: 'Blog', url: 'https://www.sencha.com/blog/', description: 'A regularly updated blog that describes new releases of Sencha Touch and often describes some of Sencha Touch''s features in detail.' }
-  - { title: 'Getting started guide', url: 'http://docs.sencha.com/touch/2.4/getting_started/getting_started.html', description: 'A great guide that can be used to get started with Sencha Touch.' }
-  - { title: 'Forums', url: 'https://www.sencha.com/forum/forumdisplay.php?89-Sencha-Touch-2.x-Forums', description: 'An active forum with support available from some of Sencha Touch''s creators.' }
+  - { title: 'API Reference', url: 'http://docs.sencha.com/touch/2.0.2/#!/api', description: '- An extensive set of documentation describing the framework''s API.' }
+  - { title: 'Blog', url: 'https://www.sencha.com/blog/', description: '- A regularly updated blog that describes new releases of Sencha Touch and often describes some of Sencha Touch''s features in detail.' }
+  - { title: 'Getting started guide', url: 'http://docs.sencha.com/touch/2.4/getting_started/getting_started.html', description: '- A great guide that can be used to get started with Sencha Touch.' }
+  - { title: 'Forums', url: 'https://www.sencha.com/forum/forumdisplay.php?89-Sencha-Touch-2.x-Forums', description: '- An active forum with support available from some of Sencha Touch''s creators.' }
 
 ---
 

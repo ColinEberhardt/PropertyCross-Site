@@ -13,10 +13,10 @@ contributors:
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-xamarin-454d3c1505c26c1918b2d30067a5f2fb88a64b29.apk'
 links:
-  - { title: 'Source Code', url: 'https://github.com/xamarin', description: 'The Xamarin source code is available on Github.' }
-  - { title: 'Official Guides', url: 'https://developer.xamarin.com/guides/', description: 'A wide variety of guides relating to Xamarin development.' }
-  - { title: 'Xamarin on Twitter', url: 'https://twitter.com/xamarinhq', description: 'Regularly updated with information about releases, features and links to articles.' }
-  - { title: 'Xamarin on StackOverflow', url: 'http://stackoverflow.com/questions/tagged/xamarin', description: 'A variety of questions and answers related to Xamarin development on Stackoverflow.' }
+  - { title: 'Source Code', url: 'https://github.com/xamarin', description: '- The Xamarin source code is available on Github.' }
+  - { title: 'Official Guides', url: 'https://developer.xamarin.com/guides/', description: '- A wide variety of guides relating to Xamarin development.' }
+  - { title: 'Xamarin on Twitter', url: 'https://twitter.com/xamarinhq', description: '- Regularly updated with information about releases, features and links to articles.' }
+  - { title: 'Xamarin on StackOverflow', url: 'http://stackoverflow.com/questions/tagged/xamarin', description: '- A variety of questions and answers related to Xamarin development on Stackoverflow.' }
 
 ---
 

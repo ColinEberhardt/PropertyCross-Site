@@ -12,10 +12,10 @@ contributors:
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-neomad-bef7a9b1ead5be19a932698168cdccf55aa8aabc.apk'#
 links:
-  - { title: 'Application Showcase', url: 'http://www.neomades.com/en/references/applications', description: 'A showcase of applications built by companies including Sony and L''Oréal using Neomades.' }
-  - { title: 'Documentation', url: 'https://docs.neomades.com/en/3.9/user-guide/index.html', description: 'The official documentation describes everything that you should need to know to develop an application using Neomades in detail.' }
-  - { title: 'Neomades on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/neomad', description: 'A variety of questions and answers relating to Neomades on Stackoverflow.' }
-  - { title: 'Neomades on Twitter', url: 'https://twitter.com/neomades', description: 'The Neomades Twitter account posts about future updates, links to useful articles and announces new releases.' }
+  - { title: 'Application Showcase', url: 'http://www.neomades.com/en/references/applications', description: '- A showcase of applications built by companies including Sony and L''Oréal using Neomades.' }
+  - { title: 'Documentation', url: 'https://docs.neomades.com/en/3.9/user-guide/index.html', description: '- The official documentation describes everything that you should need to know to develop an application using Neomades in detail.' }
+  - { title: 'Neomades on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/neomad', description: '- A variety of questions and answers relating to Neomades on Stackoverflow.' }
+  - { title: 'Neomades on Twitter', url: 'https://twitter.com/neomades', description: '- The Neomades Twitter account posts about future updates, links to useful articles and announces new releases.' }
 
 ---
 

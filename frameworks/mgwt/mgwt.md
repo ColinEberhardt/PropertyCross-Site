@@ -14,12 +14,12 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-mgwt-9deab1d63674e35b97ff9a398397c234d97188f6.apk'
 phonegap: true
 links:
-  - { title: 'Official Website', url: 'http://www.m-gwt.com', description: 'The official website hosts many useful resources including Javadoc documentation and video talks.' }
-  - { title: 'Project Wiki', url: 'https://github.com/mgwt/mgwt/wiki', description: 'The project''s Github wiki.' }
-  - { title: 'Showcase', url: 'http://mobilegwt.appspot.com/showcase/', description: 'A showcase of apps made using mgwt. This is really useful to visit when trying to get a feel for a framework.' }
-  - { title: 'Official blog', url: 'http://blog.daniel-kurka.de/', description: 'The mgwt blog provides information on future releases and also shows interesting examples of mgwt applications.' }
-  - { title: 'Source code', url: 'https://github.com/mgwt/mgwt', description: 'The full source code for mgwt is available on Github.' }
-  - { title: 'mgwt Google Group', url: 'https://groups.google.com/forum/#!forum/mgwt', description: 'An active Google group focused on questions and issues found with mgwt.' }
+  - { title: 'Official Website', url: 'http://www.m-gwt.com', description: '- The official website hosts many useful resources including Javadoc documentation and video talks.' }
+  - { title: 'Project Wiki', url: 'https://github.com/mgwt/mgwt/wiki', description: '- The project''s Github wiki.' }
+  - { title: 'Showcase', url: 'http://mobilegwt.appspot.com/showcase/', description: '- A showcase of apps made using mgwt. This is really useful to visit when trying to get a feel for a framework.' }
+  - { title: 'Official blog', url: 'http://blog.daniel-kurka.de/', description: '- The mgwt blog provides information on future releases and also shows interesting examples of mgwt applications.' }
+  - { title: 'Source code', url: 'https://github.com/mgwt/mgwt', description: '- The full source code for mgwt is available on Github.' }
+  - { title: 'mgwt Google Group', url: 'https://groups.google.com/forum/#!forum/mgwt', description: '- An active Google group focused on questions and issues found with mgwt.' }
 
 ---
 

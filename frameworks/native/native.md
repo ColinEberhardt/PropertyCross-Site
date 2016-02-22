@@ -12,11 +12,11 @@ contributors:
 downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-native-4eb213e84f1cc5daa11c3192b9ec68c145a32e61.apk'
 links:
-  - { title: 'Apple Developer Library', url: 'https://developer.apple.com/library/', description: 'Find guides, reference, and sample code for developing with the latest tools and technologies for Apple platforms.' }
-  - { title: 'Android Guides', url: 'http://developer.android.com/guide/index.html', description: 'Detailed guides and advice on how to develop apps for Android.' }
-  - { title: 'iOS Development Guides', url: 'https://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides', description: 'Guides on a wide variety of iOS related programming topics.' }
-  - { title: 'Android Development on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/android', description: 'Questions and answers related to Android development on Stackoverflow.' }
-  - { title: 'iOS Development on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/ios', description: 'A variety of questions and answers related to iOS development on Stackoverflow.' }
+  - { title: 'Apple Developer Library', url: 'https://developer.apple.com/library/', description: '- Find guides, reference, and sample code for developing with the latest tools and technologies for Apple platforms.' }
+  - { title: 'Android Guides', url: 'http://developer.android.com/guide/index.html', description: '- Detailed guides and advice on how to develop apps for Android.' }
+  - { title: 'iOS Development Guides', url: 'https://developer.apple.com/library/ios/navigation/#section=Resource%20Types&topic=Guides', description: '- Guides on a wide variety of iOS related programming topics.' }
+  - { title: 'Android Development on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/android', description: '- Questions and answers related to Android development on Stackoverflow.' }
+  - { title: 'iOS Development on Stackoverflow', url: 'http://stackoverflow.com/questions/tagged/ios', description: '- A variety of questions and answers related to iOS development on Stackoverflow.' }
 
 ---
 

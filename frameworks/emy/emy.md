@@ -13,11 +13,11 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-emy-initial.apk'
 phonegap: true
 links:
-  - { title: 'Official Emy website', url: 'http://www.emy-library.org/', description: 'The official website for the framework providing demos of projects, documentation and plugins.'}
-  - { title: 'Official Documentation', url: 'http://www.emy-library.org/documentation.html', description: 'The full documentation for the project.'}
-  - { title: 'Emy on Github', url: 'https://github.com/EmyLibrary/emy', description: 'The full Emy source code on Github.'}
-  - { title: 'Emy on Twitter', url: 'https://twitter.com/emylibrary', description: 'The official Emy Twitter account.'}
-  - { title: 'Emy on Facebook', url: 'https://www.facebook.com/emy.library', description: 'The official Emy Facebook account.'}
+  - { title: 'Official Emy website', url: 'http://www.emy-library.org/', description: '- The official website for the framework providing demos of projects, documentation and plugins.'}
+  - { title: 'Official Documentation', url: 'http://www.emy-library.org/documentation.html', description: '- The full documentation for the project.'}
+  - { title: 'Emy on Github', url: 'https://github.com/EmyLibrary/emy', description: '- The full Emy source code on Github.'}
+  - { title: 'Emy on Twitter', url: 'https://twitter.com/emylibrary', description: '- The official Emy Twitter account.'}
+  - { title: 'Emy on Facebook', url: 'https://www.facebook.com/emy.library', description: '- The official Emy Facebook account.'}
 
 ---
 

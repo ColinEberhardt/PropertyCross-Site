@@ -13,13 +13,13 @@ downloads:
   android: 'https://s3-eu-west-1.amazonaws.com/propertycross/PropertyCross-ionic-initial.apk'
 phonegap: true
 links:
-  - { title: 'Official Documentation', url: 'http://ionicframework.com/docs/', description: 'Detailed documentation giving a comprehensive overview of the framework.' }
-  - { title: 'Apps built with Ionic', url: 'http://showcase.ionicframework.com/', description: 'A showcase of apps built using Ionic.' }
-  - { title: 'Ionic Blog', url: 'http://blog.ionic.io/', description: 'A regularly updated blog with information about new releases and Ionic features.' }
-  - { title: 'Official Guide', url: 'http://ionicframework.com/docs/guide/', description: 'A detailed guide providing information on a wide variety of Ionic topics.' }
-  - { title: 'Ionic Forum', url: 'https://forum.ionicframework.com/', description: 'An excellent platform to ask and answer questions about Ionic.' }
-  - { title: 'Stackoverflow questions', url: 'http://stackoverflow.com/questions/tagged/ionic-framework', description: 'Stackoverflow questions and answers relating to Ionic.' }
-  - { title: 'Ionic on Twitter', url: 'https://twitter.com/ionicframework', description: 'Provides regular updates on the future of the project and useful Ionic articles.' }
+  - { title: 'Official Documentation', url: 'http://ionicframework.com/docs/', description: '- Detailed documentation giving a comprehensive overview of the framework.' }
+  - { title: 'Apps built with Ionic', url: 'http://showcase.ionicframework.com/', description: '- A showcase of apps built using Ionic.' }
+  - { title: 'Ionic Blog', url: 'http://blog.ionic.io/', description: '- A regularly updated blog with information about new releases and Ionic features.' }
+  - { title: 'Official Guide', url: 'http://ionicframework.com/docs/guide/', description: '- A detailed guide providing information on a wide variety of Ionic topics.' }
+  - { title: 'Ionic Forum', url: 'https://forum.ionicframework.com/', description: '- An excellent platform to ask and answer questions about Ionic.' }
+  - { title: 'Stackoverflow questions', url: 'http://stackoverflow.com/questions/tagged/ionic-framework', description: '- Stackoverflow questions and answers relating to Ionic.' }
+  - { title: 'Ionic on Twitter', url: 'https://twitter.com/ionicframework', description: '- Provides regular updates on the future of the project and useful Ionic articles.' }
 
 ---
 
