@@ -1,4 +1,4 @@
-#### Selecting a Framework
+### Selecting a Framework
 
 The APK and XAP files for the Android and Windows Phone versions of each framework are available within the project download. For iPhone you will have to build and sign the projects yourself in order to deploy them onto your own device.
 
