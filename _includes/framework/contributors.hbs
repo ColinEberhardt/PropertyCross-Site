@@ -3,17 +3,18 @@
   {{#each contributors }}
     <div class="profile">
     {{#if username }}
+      {{#if hash }}
       <div class="profile-image">
-        {{#if hash }}
           <img src="http://www.gravatar.com/avatar/{{ hash }}"/>
-        {{ else }}
-          <img class="github-img" src="{{ ../site.baseurl }}/assets/github.png"/>
-        {{/if }}
       </div>
+      {{ else }}
+      <div class="profile-identicon">
+          <img src="https://github.com/identicons/{{ username }}.png"/>
+      </div>
+      {{/if }}
       <div class="profile-info">
         <a href="https://github.com/{{ username }}/">{{ name }}</a>
       </div>
-    </div>  
     {{ else }}
       {{#if url }}
         <div class="profile-blank">
@@ -21,5 +22,6 @@
         </div>
       {{/if }}
     {{/if }}
+    </div>
   {{/each }}
 </section>
