@@ -1,18 +1,34 @@
-<section class="screenshots">
+<section class="screenshots carousel" data-interval="false">
   <div class="screenshots-header">
     <div class="container">
       <h1>Screenshots</h1>
+      <ol class="carousel-indicators">
+        <li class="android active" data-target=".carousel" data-slide-to="0"></li>
+        <li class="ios" data-target=".carousel" data-slide-to="1"></li>
+      </ol>
+      
+      {{>download_btn platform = "android" hasDownloads = downloads.android}}
+      {{>download_btn platform = "ios" hasDownloads = downloads.ios hide = "hide" }}
     </div>
   </div>
   <div class="container">
     <div class="row">
-      {{#if platforms.android }}
-        {{>screenshots_row platform = "android" hasDownloads = downloads.android }}
-      {{/if}}
-      
-      {{#if platforms.ios }}
-        {{>screenshots_row platform = "ios" hasDownloads = downloads.ios }}
-      {{/if}}
+      <div class="col-xs-12 carousel-inner">
+        {{#if platforms.android }}
+          {{>screenshots_row platform = "android" active = "active" }}
+        {{/if}}
+        
+        {{#if platforms.ios }}
+          {{>screenshots_row platform = "ios" }}
+        {{/if}}
+        
+        <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
+          <img src="{{ site.baseurl }}//assets/left.png"/>
+        </a>
+        <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
+          <img src="{{ site.baseurl }}//assets/right.png"/>
+        </a>
+      </div>
     </div>
   </div>
 </section>

@@ -1,0 +1,9 @@
+{{#if hasDownloads }}
+  <a href="{{ lookup downloads platform }}" class="btn btn-primary download-btn pull-right {{ hide }} hidden-xs">
+    Download {{ lookup site.extensions platform }} format
+  </a>
+{{ else }}
+  <button class="btn btn-large disabled download-btn pull-right {{ hide }} hidden-xs" title="Not currently supported, for now you'll need to download the project and build from source" type="button">
+    {{ lookup site.extensions platform }} not available
+  </button>
+{{/if}}

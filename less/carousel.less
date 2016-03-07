@@ -1,0 +1,41 @@
+.carousel-control {
+  width: 55px;
+  
+  &.left, &.right {
+    background-image: none;
+  }
+  
+  img {
+    position: absolute;
+    top: 40%;
+    left: 0;
+  }
+}
+
+.carousel-inner {  
+  @media(max-width: @screen-md-max) {
+    padding: 0 @grid-gutter-width * 2;
+  }
+}
+  
+.carousel-indicators {
+  display: inline-block;
+  position: static;
+  margin-left: 30px;
+  width: auto;
+
+  .android, .ios {
+    width: 45px;
+    height: 45px;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .android {
+    background-image: url('../assets/android.png');
+  }
+  .ios {
+    background-image: url('../assets/ios.png');
+  }
+}

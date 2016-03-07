@@ -67,6 +67,9 @@ gulp.task('watch', function(cb) {
       'index.html'], function() {
           runSequence('tinyssg', 'reload-site');
       });
+  gulp.watch(['scripts/**/*.*'], function() {
+      runSequence('copy', 'reload-site');
+    }
   gulp.watch(['less/**/*.less'], function() {
           runSequence('less', 'reload-site');
       });

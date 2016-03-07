@@ -8,6 +8,7 @@
     h1 {
       margin: 0;
       padding: 10px 0;
+      display: inline-block;
     }
   }
   
@@ -28,3 +29,22 @@
     }
   }
 }
+
+@media(max-width: @screen-xs-max) {
+  .screenshots {
+    .screenshots-header, .platform {
+      h1 {
+        display: block;
+      }
+    }
+    
+    .screenshot {
+      padding: 0;
+    }
+    
+    .carousel-indicators {
+      margin-left: 0;
+    }
+  }
+}
+
