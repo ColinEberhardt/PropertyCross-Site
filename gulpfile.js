@@ -15,7 +15,7 @@ gulp.task('clean', function() {
 
 // Compiles and minifies main.less and copies it to the build folder
 gulp.task('less', function() {
-  return gulp.src(['less/**/main.less'])
+  return gulp.src(['**/main.less'], {base: './less/shared'})
     .pipe(less())
     .pipe(minifyCSS())
     .pipe(gulp.dest(buildFolder + '/styles'));
