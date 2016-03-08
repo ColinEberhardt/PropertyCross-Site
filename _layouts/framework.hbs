@@ -4,15 +4,19 @@ layout: default
 
 {{>header }}
 
-{{>framework_info }}
+<main>
+  <div class="framework-info-wrapper">
+    {{>framework_info }}
 
-{{>screenshots }}
+    {{>screenshots }}
+  </div>
 
-{{#if contributors }}
-  {{>contributors }}
-{{/if}}
+  {{#if contributors }}
+    {{>contributors }}
+  {{/if}}
+</main>
 
-{{>frameworks_table }}
+{{>frameworks_table hidden = "hidden-xs" }}
 
 <script type="text/javascript">
     !function() {
