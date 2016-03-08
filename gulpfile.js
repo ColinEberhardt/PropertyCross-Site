@@ -26,8 +26,13 @@ gulp.task('less', function() {
     .pipe(gulp.dest(buildFolder + '/styles'));
 });
 
+gulp.task('copy-js', function() {
+  return gulp.src(['**/carousel.js'], {base: './node_modules/bootstrap/js'})
+    .pipe(gulp.dest(buildFolder + '/scripts'));
+});
+
 // Copies resources to the build folder
-gulp.task('copy', function() {
+gulp.task('copy', ['copy-js'], function() {
   return gulp.src(['assets/**', 'frameworks/**/*.png', 'scripts/**/*.js', 'CNAME', 'favicon.ico'], {base: '.'})
     .pipe(gulp.dest(buildFolder));
 });

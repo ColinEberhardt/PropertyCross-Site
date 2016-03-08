@@ -14,6 +14,33 @@
   <script type="text/javascript" src="{{ site.baseurl }}/scripts/typekit.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles/main.css" type="text/css">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Show/hide appropriate download button when navigating the carousel on > XS devices
+      $('.carousel-indicators li, .carousel-control').click(function() {
+        if(!$(this).hasClass('active')) {
+          $('.download-btn').toggleClass('hide');
+        }
+      });
+      
+      // Show/hide appropriate frameworks tab on XS devices
+      $('.framework-tab-headers span').click(function() {
+        var target = $(this).attr('data-target');
+      
+        $('.framework-tab').each(function() {
+          // Hide the currently shown tab
+          if(!$(this).hasClass('hidden')) {
+            $(this).toggleClass('hidden');
+          }
+          
+          // Show the clicked tab
+          if($(this).hasClass(target)) {
+            $(this).removeClass('hidden');
+          }
+        });
+      });
+    });
+  </script>
 </head>
 <body>
   {{{body}}}

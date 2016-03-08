@@ -40,8 +40,31 @@
       margin: 8px;
     }
   }
+  .framework-tab-headers {
+    .hidden-lg;
+    .hidden-md;
+    .hidden-sm;
+    
+    font-size: 16px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+    
+    span[data-target="html5-frameworks"] {
+      color: @html5FrameworksColor;
+    }
+    
+    span[data-target="compile-to-native-frameworks"] {
+      color: @compileToNativeFrameworksColor;
+    }
+    
+    span[data-target="native-frameworks"] {
+      color: @nativeFrameworksColor;
+    }
+  }
 
-  .col-xs-12:nth-child(1) {
+  .col-xs-12:nth-child(2) {
     padding: 0;
   }
 
@@ -96,7 +119,7 @@
       padding: @grid-gutter-width @frameworksTablePadding @frameworksTablePadding @frameworksTablePadding;
     }
 
-    .framework {
+    .framework, .framework-tab-headers {
       margin-top: 8px;
       border-right: none;
       
@@ -119,6 +142,7 @@
     }
     .native-frameworks {
       padding: 0;
+      margin: 0;
       .framework {
         .left-background-band(@nativeFrameworksColor);
         
@@ -129,7 +153,7 @@
     }
     .compile-to-native-frameworks {
       width: 100%;
-      padding: @frameworksTablePadding 0 0 0;
+      padding: 0;
       .framework {
         .left-background-band(@compileToNativeFrameworksColor);
       }
@@ -139,7 +163,7 @@
   @media (min-width: @screen-sm-min) {
     // ensure the left and right columns have the same height
     // see: http://getbootstrap.com.vn/examples/equal-height-columns/
-    .col-xs-12:nth-child(1) {
+    .col-xs-12:nth-child(2) {
       display: flex;
     }
 
@@ -168,14 +192,18 @@
     }
 
     // render the background on each section
+    // render the background on each section and make sure they are all shown on > XS screens
     .html5-frameworks {
       .background-bands(@html5FrameworksColor, @gray-lighter);
+      display: block !important;
     }
     .native-frameworks {
       .background-bands(@nativeFrameworksColor, white);
+      display: block !important;
     }
     .compile-to-native-frameworks {
       .background-bands(@compileToNativeFrameworksColor, white);
+      display: block !important;
     }
   }
 
