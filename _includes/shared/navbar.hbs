@@ -1,0 +1,33 @@
+<nav class="row navbar">
+  <div class="container-fluid">
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a>
+            <span data-target=".about">About</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="active" data-target=".framework-menu">Frameworks</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span data-target=".get-involved">Get involved</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-header">
+      <a class="navbar-brand navbar-left" href="{{ site.baseurl }}">
+        <img src="{{ site.baseurl}}/assets/logo.png">
+      </a>
+      
+      <button type="button navbar-right" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <img src="{{ site.baseurl}}/assets/navbar-menu.png">
+        <img src="{{ site.baseurl}}/assets/navbar-menu-close.png" class="close hidden">
+      </button>
+    </div>
+  </div>
+</nav>

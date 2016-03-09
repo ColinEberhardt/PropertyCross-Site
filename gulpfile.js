@@ -27,7 +27,7 @@ gulp.task('less', function() {
 });
 
 gulp.task('copy-js', function() {
-  return gulp.src(['**/carousel.js'], {base: './node_modules/bootstrap/js'})
+  return gulp.src(['**/carousel.js', '**/transition.js', '**/collapse.js'], {base: './node_modules/bootstrap/js'})
     .pipe(gulp.dest(buildFolder + '/scripts'));
 });
 

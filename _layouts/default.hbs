@@ -11,11 +11,32 @@
   <script type="text/javascript" src="{{ site.baseurl }}/scripts/ga.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/scripts/carousel.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/scripts/transition.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/scripts/collapse.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/scripts/typekit.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles/main.css" type="text/css">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
   <script type="text/javascript">
     $(document).ready(function() {
+      // Switch between menu and close menu buttons
+      $('.navbar-header button img').click(function() {
+        $('.navbar-header button img').toggleClass('hidden');
+      });
+      
+      // Underline active link in navbar and show/hide the corresponding content
+      $('.navbar-nav a').click(function() {
+        var target = $(this).children('span').attr('data-target');
+        var current = $('.navbar-nav span.active').attr('data-target');
+      
+        $('.navbar-nav span.active').toggleClass('active');
+        $(this).children('span').toggleClass('active');
+        
+        $(current).toggleClass('hidden');
+        $(target).toggleClass('hidden');
+        
+        $('.navbar-header button img.close').click();
+      });
+    
       // Show/hide appropriate download button when navigating the carousel on > XS devices
       $('.carousel-indicators li, .carousel-control').click(function() {
         if(!$(this).hasClass('active')) {

@@ -21,6 +21,11 @@
   .middle {
     margin: 0 @grid-gutter-width / 2;
   }
+  
+  @media(min-width: @screen-md-min) {
+    //Always show when not on mobile
+    display: flex !important;
+  }
 }
 
 @media (max-width: @screen-xs-max) {
