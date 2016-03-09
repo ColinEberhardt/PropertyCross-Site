@@ -37,3 +37,39 @@
     margin-top: @btn-top-margin;
   }
 }
+
+.colour-code(@colour) {
+  .header-main .btn {
+    color: white;
+  }
+  
+  .framework-info h1 {
+    color: @colour;
+  }
+  
+  .framework-info {
+    border-top-color: @colour;
+    
+    a {
+      color: @colour;
+    }
+  }
+  
+  .download-btn, .framework-info .btn {
+    background-color: @colour;
+    border-color: @colour;
+    color: white;
+  }
+  
+  .contributors {
+    background-color: @colour;
+    
+    h4 {
+      color: white;
+    }
+    
+    .profile {
+      background-color: fadeout(white, 80%);
+    }
+  }
+}

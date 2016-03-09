@@ -45,6 +45,7 @@ a:hover {
   .make-md-column(3);
   .make-lg-column(3);
 
+  color: @profile-text;
   background-color: @profile-background;
   background-clip: content-box;
   margin-bottom: @grid-gutter-width / 2;
@@ -63,6 +64,10 @@ a:hover {
   // Background clip to align with content above/below
   @media(max-width: @screen-xs-max){
     background-clip: padding-box;
+  }
+  
+  a {
+    color: @profile-text;
   }
 }
 
