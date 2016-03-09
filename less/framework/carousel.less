@@ -42,4 +42,18 @@
   .ios {
     background-image: url('../assets/ios.png');
   }
+  
+  @media(max-width: @screen-xs-max) {
+    float: right;
+    width: 34%;
+    
+    li {
+      border: none;
+    }
+    
+    .active {
+      background-color: transparent;
+      margin: 1px;
+    }
+  }
 }

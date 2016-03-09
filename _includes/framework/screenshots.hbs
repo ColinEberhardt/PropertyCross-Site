@@ -1,7 +1,16 @@
 <section class="screenshots carousel" data-interval="false">
   <div class="screenshots-header">
-    <div class="container">
-      <h1>Screenshots</h1>
+      <div class="container">
+      <h1 class="hidden-xs">Screenshots</h1>
+      <div class="mobile-header">
+        <h1>
+          <a href="{{ site.baseurl }}">
+            <img src="{{ site.baseurl }}/assets/back.png"></img>
+          </a>
+          {{ title }}
+        </h1>
+      </div>
+      
       <ol class="carousel-indicators">
         <li class="android active" data-target=".carousel" data-slide-to="0"></li>
         <li class="ios" data-target=".carousel" data-slide-to="1"></li>
