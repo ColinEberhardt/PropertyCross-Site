@@ -25,7 +25,7 @@ h4 {
   padding-left: 6px;
   font-size: 14px;
   font-weight: @font-weight-light;
-  
+
   img {
     margin-right: 6px;
   }
@@ -34,12 +34,14 @@ h4 {
 a:hover {
   text-decoration: none;
 }
-  
+
+@profile-height: 40px;
+
 .profile {
   .make-xs-column(12);
   .make-sm-column(6);
-  .make-md-column(4);
-  .make-lg-column(3);
+  .make-md-column(3);
+  .make-lg-column(2);
 
   background-color: @profile-background;
   background-clip: content-box;
@@ -47,7 +49,14 @@ a:hover {
   // align with content above
   padding-left: 0;
   // ensure consistent height for contributors without github account/gravatar/image
-  min-height: 80px;
+  min-height: @profile-height;
+
+  .profile-image {
+    img {
+      height: @profile-height;
+      width: @profile-height;
+    }
+  }
 
   // Background clip to align with content above/below
   @media(max-width: @screen-xs-max){
@@ -60,11 +69,11 @@ a:hover {
 }
 
 .profile-info{
-  padding: 8px 0 0 @grid-gutter-width / 2;
-  font-size: @font-size-h6;
-  font-weight: @font-weight-light;
-  
+  padding-left: 8px ;
+
   a {
+    font-size: @font-size-h5;
     font-weight: @font-weight-bold;
+    line-height: @profile-height;
   }
 }
