@@ -1,7 +1,7 @@
 .framework-menu {
   background-color: @gray-lighter;
   padding: @frameworksTablePadding * 2;
-  
+
   h2 {
     margin-top: 12px;
   }
@@ -11,18 +11,18 @@
     color: @body-color;
     font-size: 16px;
     font-weight: @font-weight-light;
-    
+
     span {
       font-size: 12px;
     }
-    
+
     img {
       width: 40px;
       height: 40px;
       margin: 8px;
     }
   }
-  
+
   .col-xs-12:nth-child(1) {
     padding: 0;
   }
@@ -53,7 +53,7 @@
   @media (max-width: @screen-xs-max) {
     // the header text is wrapped on XS screens so we need some extra padding on the top
     padding: @grid-gutter-width @frameworksTablePadding @frameworksTablePadding @frameworksTablePadding;
-  
+
     .framework {
       margin-top: 8px;
     }
@@ -117,4 +117,11 @@
       .background-bands(@compileToNativeFrameworksColor, white);
     }
   }
+
+  @media (max-width: @screen-md-max) {
+    .framework {
+      width: 100%;
+    }
+  }
+
 }
