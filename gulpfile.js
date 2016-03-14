@@ -3,10 +3,15 @@ const del = require('del');
 const tinySSG = require('tiny-ssg');
 const connect = require('gulp-connect');
 const less = require('gulp-less');
-const minifyCSS = require('gulp-minify-css');
-var runSequence = require('run-sequence');
+const minifyCSS = require('gulp-clean-css');
+const runSequence = require('run-sequence');
+const ghPages = require('gulp-gh-pages');
+const args = require('yargs').argv;
 
 var buildFolder = '_site';
+var username = 'username';
+var accessToken = 'accessToken';
+var repositoryName = "repositoryName";
 
 // Deletes the build folder
 gulp.task('clean', function() {
@@ -38,6 +43,7 @@ gulp.task('tinyssg', function() {
   return tinySSG.build(config);
 });
 
+// Runs tinyssg with baseurl from site.yml
 gulp.task('tinyssg-production', function() {
   const config = {
       includesPattern: ['_includes/**/*.*'],
@@ -57,7 +63,8 @@ gulp.task('watch', function(cb) {
   gulp.watch([
       '_includes/**/*.*',
       '_layouts/**/*.*',
-      'frameworks/**/*.*'], function() {
+      'frameworks/**/*.*', 
+      'index.html'], function() {
           runSequence('tinyssg', 'reload-site');
       });
   gulp.watch(['less/**/*.less'], function() {
@@ -73,6 +80,15 @@ gulp.task('connect', function(cb) {
       livereload: true
    });
    cb();
+});
+
+// Pushes _site content to gh-pages branch
+gulp.task('deploy', function() {
+  return gulp.src('./_site/**/*')
+    .pipe(ghPages({
+      remoteUrl: 'https://' + username + ':' + accessToken + '@github.com/' + username + '/' + repositoryName + '.git',
+      message: args.message
+    }));
 });
 
 gulp.task('build', function(callback) {
