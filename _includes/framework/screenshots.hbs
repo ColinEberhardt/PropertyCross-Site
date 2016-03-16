@@ -1,12 +1,18 @@
-<section class="row screenshots">
-  <div class="col-xs-12 screenshots-header">
-    <h1>Screenshots</h1>
+<section class="screenshots">
+  <div class="screenshots-header">
+    <div class="container">
+      <h1>Screenshots</h1>
+    </div>
   </div>
-  {{#if platforms.android }}
-    {{>screenshots_row platform = "android" hasDownloads = downloads.android }}
-  {{/if}}
-  
-  {{#if platforms.ios }}
-    {{>screenshots_row platform = "ios" hasDownloads = downloads.ios }}
-  {{/if}}
+  <div class="container">
+    <div class="row">
+      {{#if platforms.android }}
+        {{>screenshots_row platform = "android" hasDownloads = downloads.android }}
+      {{/if}}
+      
+      {{#if platforms.ios }}
+        {{>screenshots_row platform = "ios" hasDownloads = downloads.ios }}
+      {{/if}}
+    </div>
+  </div>
 </section>

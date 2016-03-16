@@ -1,27 +1,29 @@
-<section class="row contributors">
-  <h4>Framework example contributed by</h4>
-  {{#each contributors }}
-    <div class="profile">
-    {{#if username }}
-      {{#if hash }}
-      <div class="profile-image">
-          <img src="http://www.gravatar.com/avatar/{{ hash }}"/>
-      </div>
-      {{ else }}
-      <div class="profile-image">
-          <img src="https://github.com/identicons/{{ username }}.png"/>
-      </div>
-      {{/if }}
-      <div class="profile-info">
-        <a href="https://github.com/{{ username }}/">{{ name }}</a>
-      </div>
-    {{ else }}
-      {{#if url }}
-        <div class="profile-info">
-          <a href="{{ url }}">{{ name }}</a>
+<section class="contributors">
+  <div class="container">
+    <h4>Framework example contributed by</h4>
+    {{#each contributors }}
+      <div class="profile">
+      {{#if username }}
+        {{#if hash }}
+        <div class="profile-image">
+            <img src="http://www.gravatar.com/avatar/{{ hash }}"/>
         </div>
+        {{ else }}
+        <div class="profile-image">
+            <img src="https://github.com/identicons/{{ username }}.png"/>
+        </div>
+        {{/if }}
+        <div class="profile-info">
+          <a href="https://github.com/{{ username }}/">{{ name }}</a>
+        </div>
+      {{ else }}
+        {{#if url }}
+          <div class="profile-info">
+            <a href="{{ url }}">{{ name }}</a>
+          </div>
+        {{/if }}
       {{/if }}
-    {{/if }}
-    </div>
-  {{/each }}
+      </div>
+    {{/each }}
+  </div>
 </section>

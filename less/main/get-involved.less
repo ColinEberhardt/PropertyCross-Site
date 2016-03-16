@@ -1,9 +1,12 @@
 .get-involved {
-  // Equal height columns
-  display: flex;
   background-color: @gray-lighter;
-  padding: @grid-gutter-width;
-  font-weight: @font-weight-light;
+  
+  .row {
+    // Equal height columns
+    display: flex;
+    padding: @grid-gutter-width;
+    font-weight: @font-weight-light;
+  }
 
   h3 {
     color: @link-color;
@@ -22,7 +25,7 @@
 }
 
 @media (max-width: @screen-xs-max) {
-  .get-involved {
+  .get-involved .row {
     // No longer displaying columns
     display: block;
     padding: 0;

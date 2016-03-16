@@ -1,34 +1,38 @@
-<section class="row framework-menu">
-  <div class="col-xs-12">
-    <div class="html5-frameworks">
-      <h2>HTML5</h2>
-      {{#each pages}}
-        {{#if html5}}
-          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-            <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }} <span class="language"> [{{ language }}]</span>
-          </a>
-        {{/if}}
-      {{/each}}
+<section class="framework-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="html5-frameworks">
+          <h2>HTML5</h2>
+          {{#each pages}}
+            {{#if html5}}
+              <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
+                <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }} <span class="language"> [{{ language }}]</span>
+              </a>
+            {{/if}}
+          {{/each}}
+        </div>
+        <div class="compile-to-native-frameworks">
+          <h2>COMPILE TO NATIVE</h2>
+          {{#each pages}}
+            {{#if compile_to_native}}
+              <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
+                <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}<span class="language"> [{{ language }}]</span>
+              </a>
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+      <div class="col-xs-12 native-frameworks">
+        <h2>NATIVE</h2>
+        {{#each pages}}
+          {{#if native}}
+              <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
+                <img src="{{ ../site.baseurl }}/assets/android.png"/><img src="{{ ../site.baseurl }}/assets/ios.png"/> <span> Android and iOS </span><span class="language hidden-xs"> [Java and Objective-C]</span>
+              </a>
+          {{/if}}
+        {{/each}}
+      </div>
     </div>
-    <div class="compile-to-native-frameworks">
-      <h2>COMPILE TO NATIVE</h2>
-      {{#each pages}}
-        {{#if compile_to_native}}
-          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-            <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}<span class="language"> [{{ language }}]</span>
-          </a>
-        {{/if}}
-      {{/each}}
-    </div>
-  </div>
-  <div class="col-xs-12 native-frameworks">
-    <h2>NATIVE</h2>
-    {{#each pages}}
-      {{#if native}}
-          <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-            <img src="{{ ../site.baseurl }}/assets/android.png"/><img src="{{ ../site.baseurl }}/assets/ios.png"/> <span> Android and iOS </span><span class="language hidden-xs"> [Java and Objective-C]</span>
-          </a>
-      {{/if}}
-    {{/each}}
   </div>
 </section>

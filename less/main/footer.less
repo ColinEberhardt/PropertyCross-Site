@@ -1,6 +1,9 @@
 footer {
   background-color: @gray-lighter;
-  padding: 0 @grid-gutter-width @grid-gutter-width/2 @grid-gutter-width;
+  
+  .container {
+    padding: 0 @grid-gutter-width @grid-gutter-width/2 @grid-gutter-width;
+  }
   
   .footer-intro { 
     .italic-font;
@@ -9,7 +12,7 @@ footer {
 }
 
 @media(max-width: @screen-xs-max){
-  footer {
+  footer .container {
     padding: @grid-gutter-width / 2;
     // can't use multiple colors
     background-image: linear-gradient(white, white) , linear-gradient(@gray-lighter, @gray-lighter);

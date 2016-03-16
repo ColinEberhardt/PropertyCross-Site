@@ -1,15 +1,19 @@
-<header class="row">
-  <div class="col-xs-12 header-main">
-    <a href="{{ site.baseurl }}">
-      <img src="{{ site.baseurl }}/assets/logo.png" class="logo" alt="{{ site.name }}" title="{{ site.name }}"/>
-    </a>
-    <a href="{{ site.githuburl }}/archive/master.zip" class="btn btn-primary pull-right hidden-xs"><img src="{{ site.baseurl }}/assets/download.png">Download</a>
-    <a href="{{ site.githuburl }}/" class="btn btn-primary pull-right hidden-xs"><img src="{{ site.baseurl }}/assets/git.png">View on GitHub</a>
-    <a href="{{ site.blogurl }}" class="btn btn-primary pull-right hidden-xs"><img src="{{ site.baseurl }}/assets/blog.png">Blog</a>
+<header>
+  <div class="header-main">
+    <div class="container">
+      <a href="{{ site.baseurl }}">
+        <img src="{{ site.baseurl }}/assets/logo.png" class="logo" alt="{{ site.name }}" title="{{ site.name }}"/>
+      </a>
+      <a href="{{ site.githuburl }}/archive/master.zip" class="btn btn-primary pull-right hidden-xs"><img src="{{ site.baseurl }}/assets/download.png">Download</a>
+      <a href="{{ site.githuburl }}/" class="btn btn-primary pull-right hidden-xs"><img src="{{ site.baseurl }}/assets/git.png">View on GitHub</a>
+      <a href="{{ site.blogurl }}" class="btn btn-primary pull-right hidden-xs"><img src="{{ site.baseurl }}/assets/blog.png">Blog</a>
+    </div>
   </div>
   {{#if showMessage}}
-  <div class="col-xs-12 header-message">
-    <h3>Property Cross is an opensource project that helps developers select a cross platform mobile framework.</h3>
-  </div>
+  <aside class="header-message">
+    <div class="container">
+      <h3>Property Cross is an opensource project that helps developers select a cross platform mobile framework.</h3>
+    </div>
+  </aside>
   {{/if}}
 </header>

@@ -1,6 +1,9 @@
 .framework-menu {
   background-color: @gray-lighter;
-  padding: @frameworksTablePadding * 2;
+
+  .row {
+    padding: @frameworksTablePadding * 2;
+  }
 
   h2 {
     margin-top: 20px;
@@ -57,8 +60,11 @@
   }
 
   @media (max-width: @screen-xs-max) {
-    // the header text is wrapped on XS screens so we need some extra padding on the top
-    padding: @grid-gutter-width @frameworksTablePadding @frameworksTablePadding @frameworksTablePadding;
+    
+    .row {
+      // the header text is wrapped on XS screens so we need some extra padding on the top
+      padding: @grid-gutter-width @frameworksTablePadding @frameworksTablePadding @frameworksTablePadding;
+    }
 
     .framework {
       margin-top: 8px;
