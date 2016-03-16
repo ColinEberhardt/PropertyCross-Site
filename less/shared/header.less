@@ -38,11 +38,6 @@ header {
   header {
     .position-header(@logo-sm-size, -14px, 75px, 3px);
     
-    //need the extra space from the padding
-    .header-main {
-      padding-right: 0;
-    }
-    
     .btn {
       width: 120px;
       font-size: @font-size-h6;
@@ -59,11 +54,10 @@ header {
       // 20px is too large for XS screens
       font-size: 16px;
       padding: 0 @grid-gutter-width / 2;
-    }
-  
-    .header-main, .header-message {
-      padding: 0;
-      text-align: center;
-    }
+    }   
+    
+    .header-main {
+      padding: 0 @grid-gutter-width / 2;
+    } 
   }
 }
