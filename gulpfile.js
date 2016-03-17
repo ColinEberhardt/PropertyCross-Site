@@ -66,15 +66,15 @@ gulp.task('reload-site', function() {
 // Watches for changes and triggers tinyssg or less, followed by site reload
 gulp.task('watch', function(cb) {
   gulp.watch([
-      '_includes/**/*.*',
-      '_layouts/**/*.*',
-      'frameworks/**/*.*', 
-      'index.html'], function() {
-          runSequence('tinyssg', 'reload-site');
-      });
+    '_includes/**/*.*',
+    '_layouts/**/*.*',
+    'frameworks/**/*.*', 
+    'index.html'], function() {
+        runSequence('tinyssg', 'reload-site');
+    });
   gulp.watch(['scripts/**/*.*'], function() {
       runSequence('copy', 'reload-site');
-    }
+  });
   gulp.watch(['less/**/*.less'], function() {
           runSequence('less', 'reload-site');
       });

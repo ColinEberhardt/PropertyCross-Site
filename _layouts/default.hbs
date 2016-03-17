@@ -63,9 +63,7 @@
     });
   </script>
 </head>
-<body>
-  <div {{#if html5}} class="html5" {{/if}} {{#if compile_to_native}} class="compile-to-native" {{/if}} {{#if native}} class="native" {{/if}}>
-    {{{body}}}
-  </div>
+<body {{#if html5}} class="html5" {{/if}} {{#if compile_to_native}} class="compile-to-native" {{/if}} {{#if native}} class="native" {{/if}}>
+  {{{body}}}
 </body>
 </html>

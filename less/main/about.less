@@ -18,10 +18,14 @@
   
   @media(max-width: @screen-xs-max) {
     background-color: @gray-lighter;
+    
+    .container {
+      padding: 0 @grid-gutter-width / 2;
+    }
   }
   
   //Always show when not on mobile
-  @media(min-width: @screen-md-min) {
+  @media(min-width: @screen-sm-min) {
     display: block !important;
   }
 }

@@ -22,7 +22,7 @@
     margin: 0 @grid-gutter-width / 2;
   }
   
-  @media(min-width: @screen-md-min) {
+  @media(min-width: @screen-sm-min) {
     //Always show when not on mobile
     display: flex !important;
   }
@@ -32,7 +32,7 @@
   .get-involved .row {
     // No longer displaying columns
     display: block;
-    padding: 0;
+    padding: 0 0 @grid-gutter-width / 2 0;
 
     .col-xs-12 {
       margin: @grid-gutter-width / 2 0 0 0;
