@@ -8,6 +8,10 @@
     h1 {
       margin: 0;
       padding: 10px;
+      
+      @media(max-width: @screen-xs-max) {
+        padding: 10px 0;
+      }
     }
   }
   
@@ -25,14 +29,6 @@
     img {
       margin: 10px 0;
       border: 1px solid #ccc;
-    }
-  }
-}
-
-@media(max-width: @screen-xs-max) {
-  .screenshots {
-    .screenshots-header, .platform {
-      text-align: center;
     }
   }
 }
