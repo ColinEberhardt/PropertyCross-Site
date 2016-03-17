@@ -3,6 +3,7 @@ layout: framework
 title: Crosslight
 framework: crosslight
 compile_to_native: true
+wideIcon: true
 platforms:
   android: true
   ios: true

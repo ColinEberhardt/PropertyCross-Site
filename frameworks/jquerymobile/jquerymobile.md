@@ -3,6 +3,7 @@ layout: framework
 title: 'jQuery Mobile'
 framework: jquerymobile
 html5: true
+wideIcon: true
 platforms:
   android: true
   ios: true

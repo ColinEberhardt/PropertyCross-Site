@@ -3,6 +3,7 @@ layout: framework
 title: jQTouch
 framework: jqtouch
 html5: true
+wideIcon: true
 platforms:
   android: true
   ios: true

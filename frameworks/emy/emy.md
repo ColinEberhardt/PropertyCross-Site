@@ -3,6 +3,7 @@ layout: framework
 title: Emy
 framework: emy
 html5: true
+wideIcon: true
 platforms:
   android: true
   ios: true

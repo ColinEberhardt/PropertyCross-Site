@@ -7,7 +7,7 @@
           {{#each pages}}
             {{#if html5}}
               <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-                <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }} <span class="language"> [{{ language }}]</span>
+                <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }} <span class="language"> [{{ language }}]</span>
               </a>
             {{/if}}
           {{/each}}
@@ -17,7 +17,7 @@
           {{#each pages}}
             {{#if compile_to_native}}
               <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-                <img src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}<span class="language"> [{{ language }}]</span>
+                <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}<span class="language"> [{{ language }}]</span>
               </a>
             {{/if}}
           {{/each}}
@@ -28,7 +28,7 @@
         {{#each pages}}
           {{#if native}}
               <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-                <img src="{{ ../site.baseurl }}/assets/android.png"/><img src="{{ ../site.baseurl }}/assets/ios.png"/> <span> Android and iOS </span><span class="language hidden-xs"> [Java and Objective-C]</span>
+                <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/assets/android.png"/><img src="{{ ../site.baseurl }}/assets/ios.png"/> <span> Android and iOS </span><span class="language hidden-xs"> [Java and Objective-C]</span>
               </a>
           {{/if}}
         {{/each}}
