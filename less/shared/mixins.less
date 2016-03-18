@@ -1,6 +1,10 @@
-.background-bands(@left-band-color, @right-band-color) {
+.left-background-band(@left-band-color) {
   background-color: white;
   border-left: 15px solid @left-band-color;
+}
+
+.background-bands(@left-band-color, @right-band-color) {
+  .left-background-band(@left-band-color);
   border-right: 15px solid @right-band-color;
 }
 

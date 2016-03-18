@@ -6,9 +6,11 @@
           <h2>HTML5</h2>
           {{#each pages}}
             {{#if html5}}
-              <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-                <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }} <span class="language"> [{{ language }}]</span>
-              </a>
+              <div class="framework">
+                <a href="{{ ../site.baseurl }}{{ page.destination }}" draggable="false">
+                  <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png" draggable="false"/>{{ title }} <span class="language"> [{{ language }}]</span>
+                </a>
+              </div>
             {{/if}}
           {{/each}}
         </div>
@@ -16,9 +18,11 @@
           <h2>COMPILE TO NATIVE</h2>
           {{#each pages}}
             {{#if compile_to_native}}
-              <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-                <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}<span class="language"> [{{ language }}]</span>
-              </a>
+              <div class="framework">
+                <a href="{{ ../site.baseurl }}{{ page.destination }}" draggable="false">
+                  <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png" draggable="false"/>{{ title }}<span class="language"> [{{ language }}]</span>
+                </a>
+              </div>
             {{/if}}
           {{/each}}
         </div>
@@ -27,9 +31,11 @@
         <h2>NATIVE</h2>
         {{#each pages}}
           {{#if native}}
-              <a href="{{ ../site.baseurl }}{{ page.destination }}" class="framework">
-                <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/assets/android.png"/><img src="{{ ../site.baseurl }}/assets/ios.png"/> <span> Android and iOS </span><span class="language hidden-xs"> [Java and Objective-C]</span>
+            <div class="framework">
+              <a href="{{ ../site.baseurl }}{{ page.destination }}" draggable="false">
+                <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/assets/android.png" draggable="false"/><img src="{{ ../site.baseurl }}/assets/ios.png" draggable="false"/> <span> Android and iOS </span><span class="language hidden-xs"> [Java and Objective-C]</span>
               </a>
+            </div>
           {{/if}}
         {{/each}}
       </div>
