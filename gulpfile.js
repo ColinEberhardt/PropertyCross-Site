@@ -28,7 +28,7 @@ gulp.task('less', function() {
 
 // Copies resources to the build folder
 gulp.task('copy', function() {
-  return gulp.src(['assets/**', 'frameworks/**/*.png', 'scripts/**/*.js'], {base: '.'})
+  return gulp.src(['assets/**', 'frameworks/**/*.png', 'scripts/**/*.js', 'CNAME', 'favicon.ico'], {base: '.'})
     .pipe(gulp.dest(buildFolder));
 });
 
