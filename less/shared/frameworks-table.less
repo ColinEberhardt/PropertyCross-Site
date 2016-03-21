@@ -16,6 +16,12 @@
       font-size: 16px;
       font-weight: @font-weight-light;
       text-decoration: none;
+      
+      .icon-wrapper {
+        display: inline-block;
+        width: 65px;
+        text-align: center;
+      }
     }
 
     .language {
@@ -90,6 +96,10 @@
       
       a {
         display: block;
+        
+        .icon-wrapper {
+          width: 80px;
+        }
       }
     }
 
@@ -105,6 +115,10 @@
       padding: 0;
       .framework {
         .left-background-band(@nativeFrameworksColor);
+        
+        img:first-child {
+          margin-left: 18px;
+        }
       }
     }
     .compile-to-native-frameworks {
@@ -127,14 +141,10 @@
     .framework {
       width: 50%;
       float: left;
-      
-      .icon-wrapper {
-        display: inline-block;
-        width: 65px;
-      }
   
       .wide-icon {
         margin-left: 0;
+        margin-right: 0;
       }
     }
 
