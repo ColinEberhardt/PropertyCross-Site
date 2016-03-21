@@ -7,6 +7,7 @@ platforms:
   android: true
   ios: true
 language: JS
+clearfix: true
 contributors:
   - { name: 'Graham Odds', username: godds, hash: 3f5e6c753071c6a41f7f1dbb89daeb3b }
 downloads:
