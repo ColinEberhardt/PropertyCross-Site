@@ -19,8 +19,14 @@
       
       .icon-wrapper {
         display: inline-block;
-        width: 65px;
+        width: @frameworkIconWidth;
         text-align: center;
+      }
+      
+      .framework-overflow-md {
+        @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+          margin-left: @frameworkIconWidth;
+        }
       }
     }
 
@@ -41,7 +47,7 @@
 
   .html5-frameworks  {
     width: 50%;
-    padding: 0 @frameworksTablePadding;
+    padding-left: @frameworksTablePadding;
     h2 {
       color: @html5FrameworksColor;
     }
@@ -53,7 +59,7 @@
 
   .compile-to-native-frameworks  {
     width: 50%;
-    padding: 0 @frameworksTablePadding;
+    padding-left: @frameworksTablePadding;
     h2 {
       color: @compileToNativeFrameworksColor;
     }
@@ -145,6 +151,7 @@
       .wide-icon {
         margin-left: 0;
         margin-right: 0;
+        padding: 3px 0;
       }
     }
 

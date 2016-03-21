@@ -1,6 +1,6 @@
 ---
 layout: framework
-title: 'Xamarin MvvmCross'
+title: 'Xamarin <span class="framework-overflow-md">MvvmCross</span>'
 framework: xamarinmvvmcross
 compile_to_native: true
 platforms:

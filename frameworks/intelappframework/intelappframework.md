@@ -1,6 +1,6 @@
 ---
 layout: framework
-title: 'Intel App Framework'
+title: 'Intel App <span class="framework-overflow-md">Framework</span>'
 framework: intelappframework
 html5: true
 wideIcon: true
