@@ -8,7 +8,11 @@
             {{#if html5}}
               <div class="framework">
                 <a href="{{ ../site.baseurl }}{{ page.destination }}" draggable="false">
-                  <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png" draggable="false"/>{{ title }} <span class="language"> [{{ language }}]</span>
+                  <span class="icon-wrapper">
+                    <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png" draggable="false"/>
+                  </span>
+                  {{ title }}
+                  <span class="language">[{{ language }}]</span>
                 </a>
               </div>
             {{/if}}
@@ -20,7 +24,11 @@
             {{#if compile_to_native}}
               <div class="framework">
                 <a href="{{ ../site.baseurl }}{{ page.destination }}" draggable="false">
-                  <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png" draggable="false"/>{{ title }}<span class="language"> [{{ language }}]</span>
+                  <span class="icon-wrapper">
+                    <img {{#if wideIcon }} class="wide-icon" {{/if}} src="{{ ../site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png" draggable="false"/>
+                  </span>
+                  {{ title }}
+                  <span class="language">[{{ language }}]</span>
                 </a>
               </div>
             {{/if}}
