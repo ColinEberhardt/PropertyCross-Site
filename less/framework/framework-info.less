@@ -14,16 +14,20 @@
     display: inline-block;
   }
   
+  @media(max-width: @screen-md-max) {
+    .full-width-md {
+      width: 100%;
+    }
+  }
+  
   h3 {
     .italic-font;
     padding: 0 @grid-gutter-width / 2;
+    margin-top: 0;
   }
   
-  h3:nth-child(1) {
-    .hidden-lg;
-    .hidden-md;
-    .hidden-sm;
-  
+  // Heading inside the links column
+  .col-sm-6 h3 {
     padding: 0;
   }
   
@@ -34,6 +38,10 @@
   @media(max-width: @screen-xs-max) {
     h1 {
       width: 100%;
+    }
+    
+    h3 {
+      margin-top: 20px;
     }
   }
 }
