@@ -36,13 +36,6 @@
         
         $('.navbar-header button img.close').click();
       });
-    
-      // Show/hide appropriate download button when navigating the carousel on > XS devices
-      $('.carousel-indicators li, .carousel-control').click(function() {
-        if(!$(this).hasClass('active')) {
-          $('.download-btn').toggleClass('hide');
-        }
-      });
       
       // Show/hide appropriate frameworks tab on XS devices
       $('.framework-tab-headers span').click(function() {

@@ -1,42 +1,42 @@
-<section class="screenshots carousel" data-interval="false">
+<section class="screenshots" >
   <div class="screenshots-header">
-      <div class="container">
-      <h1 class="hidden-xs">Screenshots</h1>
-      <div class="mobile-header">
-        <h1>
-          <a href="{{ site.baseurl }}">
-            <img src="{{ site.baseurl }}/assets/back.png"></img>
-          </a>
-          {{ title }}
-        </h1>
+    <div class="container">
+      <div class="col-xs-12 hidden-xs">
+        <h1>Screenshots</h1>
+        <ol class="gallery-indicators">
+          <li class="android active"></li>
+          <li class="ios"></li>
+        </ol>
+        {{>download_btn platform = "android" hasDownloads = downloads.android}}
+        {{>download_btn platform = "ios" hasDownloads = downloads.ios hide = "hide" }}
       </div>
-      
-      <ol class="carousel-indicators">
-        <li class="android active" data-target=".carousel" data-slide-to="0"></li>
-        <li class="ios" data-target=".carousel" data-slide-to="1"></li>
-      </ol>
-      
-      {{>download_btn platform = "android" hasDownloads = downloads.android}}
-      {{>download_btn platform = "ios" hasDownloads = downloads.ios hide = "hide" }}
     </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 carousel-inner">
-        {{#if platforms.android }}
-          {{>screenshots_row platform = "android" active = "active" }}
-        {{/if}}
-        
-        {{#if platforms.ios }}
-          {{>screenshots_row platform = "ios" }}
-        {{/if}}
-        
-        <a class="left carousel-control hidden-xs" href=".carousel" role="button" data-slide="prev">
+      <div class="col-xs-12 gallery-indicators-mobile">
+        <div class="android active">
+          <img src="{{ site.baseurl }}//assets/android.png"/>
+        </div>
+        <div class="ios">
+          <img src="{{ site.baseurl }}//assets/ios.png"/>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <div class="left hidden-xs">
           <img src="{{ site.baseurl }}//assets/left.png"/>
-        </a>
-        <a class="right carousel-control hidden-xs" href=".carousel" role="button" data-slide="next">
+        </div>
+        <div class="screenshot-container">
+          {{#if platforms.android }}
+            {{>screenshots_row platform = "android" active = "active" }}
+          {{/if}}
+          {{#if platforms.ios }}
+            {{>screenshots_row platform = "ios" }}
+          {{/if}}
+        </div>
+        <div class="right hidden-xs">
           <img src="{{ site.baseurl }}//assets/right.png"/>
-        </a>
+        </div>
       </div>
     </div>
   </div>
