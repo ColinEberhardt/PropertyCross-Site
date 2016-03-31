@@ -7,6 +7,7 @@ const minifyCSS = require('gulp-clean-css');
 const runSequence = require('run-sequence');
 const ghPages = require('gulp-gh-pages');
 const args = require('yargs').argv;
+const htmlmin = require('gulp-htmlmin');
 
 var buildFolder = '_site';
 var username = 'username';
@@ -58,6 +59,18 @@ gulp.task('tinyssg-production', function() {
   return tinySSG.build(config);
 });
 
+// Minify HTML
+gulp.task('htmlmin', function() {
+  return gulp.src('_site/**/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      minifyJS: true,
+      minifyCSS: true,
+      removeComments: true,
+    }))
+    .pipe(gulp.dest('_site'));
+});
+
 // Reloads the website
 gulp.task('reload-site', function() {
   return gulp.src(buildFolder + '/**/*.*').pipe(connect.reload());
@@ -70,14 +83,14 @@ gulp.task('watch', function(cb) {
     '_layouts/**/*.*',
     'frameworks/**/*.*', 
     'index.html'], function() {
-        runSequence('tinyssg', 'reload-site');
+      runSequence('tinyssg', 'htmlmin', 'reload-site');
     });
   gulp.watch(['scripts/**/*.*'], function() {
-      runSequence('copy', 'reload-site');
+    runSequence('copy-js', 'reload-site');
   });
   gulp.watch(['less/**/*.less'], function() {
-          runSequence('less', 'reload-site');
-      });
+    runSequence('less', 'reload-site');
+  });
   cb();
 });
 
@@ -100,11 +113,11 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clean', 'copy', 'less', 'tinyssg', callback);
+  runSequence('clean', 'copy', 'less', 'tinyssg', 'htmlmin', callback);
 });
 
 gulp.task('build-production', function(callback) {
-  runSequence('clean', 'copy', 'less', 'tinyssg-production', callback);
+  runSequence('clean', 'copy', 'less', 'tinyssg-production', 'htmlmin', callback);
 });
 
 gulp.task('default', function(callback) {
