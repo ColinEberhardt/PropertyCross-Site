@@ -1,6 +1,7 @@
 ---
 layout: framework
 title: 'jQuery Mobile'
+longTitle: true
 framework: jquerymobile
 html5: true
 wideIcon: true
