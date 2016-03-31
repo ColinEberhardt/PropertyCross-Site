@@ -1,5 +1,5 @@
-<header class="{{ hidden }}">
-  <div class="header-main">
+<header>
+  <div class="header-main hidden-xs">
     <div class="container">
       <a href="{{ site.baseurl }}">
         <img src="{{ site.baseurl }}/assets/logo.svg" class="logo" alt="{{ site.name }}" title="{{ site.name }}"/>
@@ -10,10 +10,29 @@
     </div>
   </div>
   {{#if showMessage}}
-  <aside class="header-message">
+  <aside class="header-message hidden-xs">
     <div class="container">
       <h3>Property Cross is an opensource project that helps developers select a cross platform mobile framework.</h3>
     </div>
   </aside>
   {{/if}}
+
+{{#if showMobile}}
+  <div class="header-mobile">
+    <a class="back-button" href="{{ site.baseurl }}">
+      {{#if html5 }}
+        <img src="{{ site.baseurl }}/assets/back_html5.png"/>
+      {{/if}}
+      {{#if compile_to_native }}
+        <img src="{{ site.baseurl }}/assets/back_compile_to_native.png"/>
+      {{/if}}
+      {{#if native }}
+        <img src="{{ site.baseurl }}/assets/back_native.png"/>
+      {{/if}}
+    </a>
+    <div>
+      <img src="{{ site.baseurl }}/frameworks/{{ framework }}/{{ framework }}.png"/>{{ title }}{{#unless native }}<span class="language"> [{{ language }}]</span>{{/unless}}
+    </div>
+  </div>
+{{/if}}
 </header>

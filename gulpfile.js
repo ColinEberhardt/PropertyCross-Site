@@ -113,6 +113,7 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('build', function(callback) {
+  // We need htmlmin on dev-build as well to remove whiteSpace between tags which breaks the layout for 50% width elements
   runSequence('clean', 'copy', 'less', 'tinyssg', 'htmlmin', callback);
 });
 
