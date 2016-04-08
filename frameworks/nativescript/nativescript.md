@@ -2,7 +2,7 @@
 layout: framework
 title: 'NativeScript'
 framework: nativescript
-html5: false
+compile_to_native: true
 platforms:
   android: true
   ios: false
