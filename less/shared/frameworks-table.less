@@ -10,13 +10,29 @@
   }
 
   .framework {
-    display: block;
-    color: @body-color;
-    font-size: 16px;
-    font-weight: @font-weight-light;
+    
+    a {
+      color: @body-color;
+      font-size: 16px;
+      font-weight: @font-weight-light;
+      text-decoration: none;
+      
+      .icon-wrapper {
+        display: inline-block;
+        width: @frameworkIconWidth;
+        text-align: center;
+      }
+      
+      .framework-overflow-md {
+        @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+          margin-left: @frameworkIconWidth;
+        }
+      }
+    }
 
     .language {
       font-size: 12px;
+      color: fadeout(gray, 20%);
     }
 
     img {
@@ -31,17 +47,25 @@
 
   .html5-frameworks  {
     width: 50%;
-    padding: 0 @frameworksTablePadding;
-    h2, span {
-      color: @html5FrameworksColor
+    padding-left: @frameworksTablePadding;
+    h2 {
+      color: @html5FrameworksColor;
+    }
+    
+    a:hover {
+      color: @html5FrameworksColor;
     }
   }
 
   .compile-to-native-frameworks  {
     width: 50%;
-    padding: 0 @frameworksTablePadding;
-    h2, span {
-      color: @compileToNativeFrameworksColor
+    padding-left: @frameworksTablePadding;
+    h2 {
+      color: @compileToNativeFrameworksColor;
+    }
+    
+    a:hover {
+      color: @compileToNativeFrameworksColor;
     }
   }
 
@@ -54,7 +78,11 @@
       vertical-align: middle;
     }
     
-    h2, .language {
+    h2 {
+      color: @nativeFrameworksColor;
+    }
+    
+    a:hover {
       color: @nativeFrameworksColor;
     }
 
@@ -70,6 +98,15 @@
 
     .framework {
       margin-top: 8px;
+      border-right: none;
+      
+      a {
+        display: block;
+        
+        .icon-wrapper {
+          width: 80px;
+        }
+      }
     }
 
     // render the background left-hand and right-hand bar on each individual framework
@@ -77,20 +114,24 @@
       width: 100%;
       padding: 0;
       .framework {
-        .background-bands(@html5FrameworksColor, white);
+        .left-background-band(@html5FrameworksColor);
       }
     }
     .native-frameworks {
       padding: 0;
       .framework {
-        .background-bands(@nativeFrameworksColor, white);
+        .left-background-band(@nativeFrameworksColor);
+        
+        img:first-child {
+          margin-left: 18px;
+        }
       }
     }
     .compile-to-native-frameworks {
       width: 100%;
       padding: @frameworksTablePadding 0 0 0;
       .framework {
-        .background-bands(@compileToNativeFrameworksColor, white);
+        .left-background-band(@compileToNativeFrameworksColor);
       }
     }
   }
@@ -109,12 +150,14 @@
   
       .wide-icon {
         margin-left: 0;
+        margin-right: 0;
+        padding: 3px 0;
       }
     }
 
     // for native, create a three column layout
     .native-frameworks {
-      a {
+      div {
         float: left;
         width: 88%;
       }
