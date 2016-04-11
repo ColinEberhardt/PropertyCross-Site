@@ -9,9 +9,6 @@ const ghPages = require('gulp-gh-pages');
 const args = require('yargs').argv;
 
 var buildFolder = '_site';
-var username = 'username';
-var accessToken = 'accessToken';
-var repositoryName = "repositoryName";
 
 // Deletes the build folder
 gulp.task('clean', function() {
@@ -63,7 +60,7 @@ gulp.task('watch', function(cb) {
   gulp.watch([
       '_includes/**/*.*',
       '_layouts/**/*.*',
-      'frameworks/**/*.*', 
+      'frameworks/**/*.*',
       'index.html'], function() {
           runSequence('tinyssg', 'reload-site');
       });
@@ -85,10 +82,7 @@ gulp.task('connect', function(cb) {
 // Pushes _site content to gh-pages branch
 gulp.task('deploy', function() {
   return gulp.src('./_site/**/*')
-    .pipe(ghPages({
-      remoteUrl: 'https://' + username + ':' + accessToken + '@github.com/' + username + '/' + repositoryName + '.git',
-      message: args.message
-    }));
+    .pipe(ghPages());
 });
 
 gulp.task('build', function(callback) {
