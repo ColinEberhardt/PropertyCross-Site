@@ -7,4 +7,25 @@
   h1 {
     margin-top: 0;
   }
+  
+  .header-mobile {
+    .hidden-sm;
+    .hidden-md;
+    .hidden-lg;
+  
+    font-weight: @font-weight-light;
+  }
+  
+  @media(max-width: @screen-xs-max) {
+    background-color: @gray-lighter;
+    
+    .container {
+      padding: 0 @grid-gutter-width / 2;
+    }
+  }
+  
+  //Always show when not on mobile
+  @media(min-width: @screen-sm-min) {
+    display: block !important;
+  }
 }

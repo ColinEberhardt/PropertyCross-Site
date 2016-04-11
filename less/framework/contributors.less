@@ -2,16 +2,21 @@
   background-color: @gray-lighter;
 
   .container {  
-    padding: @grid-gutter-width / 2 @grid-gutter-width 0 @grid-gutter-width;
+    padding: 0 @grid-gutter-width 0 @grid-gutter-width;
 
     @media(max-width: @screen-xs-max) {
       padding-left: @grid-gutter-width / 2;
       padding-right: @grid-gutter-width / 2;
-      margin-bottom: -@grid-gutter-width / 2;
     }
   }
 
   h4 {
     .italic-font;
+  }
+}
+
+.native, .html5 {
+  .contributors .profile-info a {
+    color: white;
   }
 }

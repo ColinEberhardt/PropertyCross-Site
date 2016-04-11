@@ -7,6 +7,7 @@ const minifyCSS = require('gulp-clean-css');
 const runSequence = require('run-sequence');
 const ghPages = require('gulp-gh-pages');
 const args = require('yargs').argv;
+const htmlmin = require('gulp-htmlmin');
 
 var buildFolder = '_site';
 
@@ -23,8 +24,13 @@ gulp.task('less', function() {
     .pipe(gulp.dest(buildFolder + '/styles'));
 });
 
+gulp.task('copy-js', function() {
+  return gulp.src(['**/transition.js', '**/collapse.js'], {base: './node_modules/bootstrap/js'})
+    .pipe(gulp.dest(buildFolder + '/scripts'));
+});
+
 // Copies resources to the build folder
-gulp.task('copy', function() {
+gulp.task('copy', ['copy-js'], function() {
   return gulp.src(['assets/**', 'frameworks/**/*.png', 'scripts/**/*.js', 'CNAME', 'favicon.ico'], {base: '.'})
     .pipe(gulp.dest(buildFolder));
 });
@@ -50,6 +56,18 @@ gulp.task('tinyssg-production', function() {
   return tinySSG.build(config);
 });
 
+// Minify HTML
+gulp.task('htmlmin', function() {
+  return gulp.src('_site/**/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      minifyJS: true,
+      minifyCSS: true,
+      removeComments: true,
+    }))
+    .pipe(gulp.dest('_site'));
+});
+
 // Reloads the website
 gulp.task('reload-site', function() {
   return gulp.src(buildFolder + '/**/*.*').pipe(connect.reload());
@@ -58,15 +76,18 @@ gulp.task('reload-site', function() {
 // Watches for changes and triggers tinyssg or less, followed by site reload
 gulp.task('watch', function(cb) {
   gulp.watch([
-      '_includes/**/*.*',
-      '_layouts/**/*.*',
-      'frameworks/**/*.*',
-      'index.html'], function() {
-          runSequence('tinyssg', 'reload-site');
-      });
+    '_includes/**/*.*',
+    '_layouts/**/*.*',
+    'frameworks/**/*.*', 
+    'index.html'], function() {
+      runSequence('tinyssg', 'htmlmin', 'reload-site');
+    });
+  gulp.watch(['scripts/**/*.*'], function() {
+    runSequence('copy-js', 'reload-site');
+  });
   gulp.watch(['less/**/*.less'], function() {
-          runSequence('less', 'reload-site');
-      });
+    runSequence('less', 'reload-site');
+  });
   cb();
 });
 
@@ -86,11 +107,12 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clean', 'copy', 'less', 'tinyssg', callback);
+  // We need htmlmin on dev-build as well to remove whiteSpace between tags which breaks the layout for 50% width elements
+  runSequence('clean', 'copy', 'less', 'tinyssg', 'htmlmin', callback);
 });
 
 gulp.task('build-production', function(callback) {
-  runSequence('clean', 'copy', 'less', 'tinyssg-production', callback);
+  runSequence('clean', 'copy', 'less', 'tinyssg-production', 'htmlmin', callback);
 });
 
 gulp.task('default', function(callback) {

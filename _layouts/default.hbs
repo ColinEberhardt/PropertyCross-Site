@@ -9,11 +9,53 @@
   <script src="/scripts/html5shiv.js"></script>
   <![endif]-->
   <script type="text/javascript" src="{{ site.baseurl }}/scripts/ga.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/scripts/transition.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/scripts/collapse.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/scripts/typekit.js"></script>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles/main.css" type="text/css">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico">
+  <script type="text/javascript">
+    $(document).ready(function() {
+      // Switch between menu and close menu buttons
+      $('.navbar-toggle').click(function() {
+        $('.navbar-toggle img').toggleClass('hidden');
+      });
+      
+      // Underline active link in navbar and show/hide the corresponding content
+      $('.navbar-nav a').click(function() {
+        var target = $(this).children('span').attr('data-target');
+        var current = $('.navbar-nav span.active').attr('data-target');
+      
+        $('.navbar-nav span.active').toggleClass('active');
+        $(this).children('span').toggleClass('active');
+        
+        $(current).toggleClass('hidden');
+        $(target).toggleClass('hidden');
+        
+        $('.navbar-header button img.close').click();
+      });
+      
+      // Show/hide appropriate frameworks tab on XS devices
+      $('.framework-tab-headers span').click(function() {
+        var target = $(this).attr('data-target');
+      
+        $('.framework-tab').each(function() {
+          // Hide the currently shown tab
+          if(!$(this).hasClass('hidden')) {
+            $(this).toggleClass('hidden');
+          }
+          
+          // Show the clicked tab
+          if($(this).hasClass(target)) {
+            $(this).removeClass('hidden');
+          }
+        });
+      });
+    });
+  </script>
 </head>
-<body>
+<body {{#if html5}} class="html5" {{/if}} {{#if compile_to_native}} class="compile-to-native" {{/if}} {{#if native}} class="native" {{/if}}>
   {{{body}}}
 </body>
 </html>
