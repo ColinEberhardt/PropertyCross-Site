@@ -20,6 +20,33 @@ header {
     }
   }
   
+  .header-mobile {
+    .hidden-sm;
+    .hidden-md;
+    .hidden-lg;
+    background-color: white;
+    padding: @grid-gutter-width / 2;
+    
+    .back-button {
+      img {
+        height: 40px;
+        padding-right: @grid-gutter-width / 2;
+      }
+    }
+    
+    div {
+      display: inline-block;
+      color: #383A3B;
+      font-size: 16px;
+      font-weight: 300;
+    
+      img {
+        height: 40px;
+        margin: 0 8px;
+      }
+    }
+  }
+  
   .btn {
     width: 140px;
     margin-left: 10px;
@@ -49,6 +76,7 @@ header {
 @media(max-width: @screen-xs-max) {
   header {
     .position-header(@logo-xs-size, -12px, 0, 0);
+    padding-top: 0;
     
     h2 {
       // 20px is too large for XS screens

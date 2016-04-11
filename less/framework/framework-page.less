@@ -1,0 +1,36 @@
+.framework-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  .framework-info {
+    order: 1;
+  }
+  
+  .screenshots {
+    order: 2;
+  }
+
+  @media(max-width: @screen-xs-max) {
+    .framework-info {
+      order: 2;
+      margin-top: 0;
+    }
+  
+    .screenshots {
+      order: 1;
+    }
+  }
+}
+
+.html5 {
+  .colour-code(@html5FrameworksColor);
+}
+
+.compile-to-native {
+  .colour-code(@compileToNativeFrameworksColor);
+}
+
+.native {
+  .colour-code(@nativeFrameworksColor);
+}

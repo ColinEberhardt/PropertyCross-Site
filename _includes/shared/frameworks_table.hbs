@@ -1,9 +1,14 @@
-<section class="framework-menu">
+<section class="framework-menu {{ hidden }}">
   <div class="container">
     <div class="row">
+      <div class="framework-tab-headers">
+        <span data-target="html5-frameworks">HTML5</span> | 
+        <span data-target="compile-to-native-frameworks">Compile to Native</span> | 
+        <span data-target="native-frameworks">Native</span>
+      </div>
       <div class="col-xs-12">
-        <div class="html5-frameworks">
-          <h2>HTML5</h2>
+        <div class="html5-frameworks framework-tab">
+          <h2 class="hidden-xs">HTML5</h2>
           {{#each pages}}
             {{#if html5}}
               <div class="framework">
@@ -20,8 +25,8 @@
             {{/if}}
           {{/each}}
         </div>
-        <div class="compile-to-native-frameworks">
-          <h2>COMPILE TO NATIVE</h2>
+        <div class="compile-to-native-frameworks framework-tab hidden">
+          <h2 class="hidden-xs">COMPILE TO NATIVE</h2>
           {{#each pages}}
             {{#if compile_to_native}}
               <div class="framework">
@@ -39,8 +44,8 @@
           {{/each}}
         </div>
       </div>
-      <div class="col-xs-12 native-frameworks">
-        <h2>NATIVE</h2>
+      <div class="col-xs-12 native-frameworks framework-tab hidden">
+        <h2 class="hidden-xs">NATIVE</h2>
         {{#each pages}}
           {{#if native}}
             <div class="framework">
@@ -52,5 +57,7 @@
         {{/each}}
       </div>
     </div>
+    </div>
+  </div>
   </div>
 </section>

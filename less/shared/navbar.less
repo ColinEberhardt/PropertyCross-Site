@@ -1,0 +1,55 @@
+.navbar {
+  .hidden-sm;
+  .hidden-md;
+  .hidden-lg;
+
+  margin-bottom: 0;
+  border: none;
+  
+  .nav {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+  
+  .navbar-brand {
+    padding: @grid-gutter-width / 2 0 0 @grid-gutter-width / 2;
+  
+    img {
+      width: 225px;
+    }
+  }
+  
+  .navbar-toggle {
+    margin: 6px 0 0 0;
+    
+    .close {
+      padding: 8px;
+    }
+  }
+  
+  .navbar-collapse {
+    background: @html5FrameworksColor;
+    
+    a {
+      color: white;
+      background: @html5FrameworksColor;
+      
+      span {
+        padding: 5px 0;
+        
+        &.active {
+          border-bottom: @navbar-active-border;
+        }
+      }
+      
+      &:hover {
+        background: @html5FrameworksColor;
+        cursor: pointer;
+        
+        span {
+          border-bottom: @navbar-active-border;
+        }
+      }
+    }
+  }
+}

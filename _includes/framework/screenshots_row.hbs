@@ -1,17 +1,4 @@
-<div class="col-xs-12 col-sm-6 platform">
-  <img src="{{ site.baseurl }}/assets/{{ platform }}.png" alt="{{ lookup site.platforms platform }}" title="{{ lookup site.platforms platform }}"/>
-</div>
-<div class="col-sm-6 hidden-xs"> 
-  {{#if hasDownloads }}
-  <a href="{{ lookup downloads platform }}" class="btn btn-primary pull-right">
-    Download {{ lookup site.extensions platform }} format
-  </a>
-  {{/if}}
-</div>
-
-<div class="col-xs-12">
-  {{> screenshot screenshotName = "PropertyCross"}}
-  {{> screenshot screenshotName = "SearchResults"}}
-  {{> screenshot screenshotName = "Property"}}
-  {{> screenshot screenshotName = "Favourites"}}
-</div>
+{{> screenshot screenshotName = "PropertyCross"}}
+{{> screenshot screenshotName = "SearchResults"}}
+{{> screenshot screenshotName = "Property"}}
+{{> screenshot screenshotName = "Favourites"}}

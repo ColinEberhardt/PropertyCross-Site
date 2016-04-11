@@ -1,6 +1,7 @@
 ---
 layout: framework
 title: 'Sencha Touch 2'
+longTitle: true
 framework: senchatouch2
 html5: true
 platforms:

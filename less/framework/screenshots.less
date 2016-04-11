@@ -8,6 +8,59 @@
     h1 {
       margin: 0;
       padding: 10px 0;
+      float: left;
+    }
+    
+    .gallery-indicators {
+      margin-top: 15px;
+      list-style: none;
+      display: inline-block;
+      
+      li {
+        float: left;
+        text-align: center;
+        width: 45px;
+        height: 45px;
+        border: 1px solid white;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 25px 25px;
+        margin: 1px;
+        cursor: pointer;
+        
+        &.active {
+          background-color: white;
+          margin: 0;
+        }
+        
+        &.android {
+          background-image: url(../assets/android.png);
+        }
+        
+        &.ios {
+          background-image: url(../assets/ios.png);
+        }
+      }
+    }
+  }
+  
+  .gallery-indicators-mobile {
+    .hidden-sm; 
+    .hidden-md; 
+    .hidden-lg;
+    
+    background-color: @gray-lighter;
+    padding: @grid-gutter-width / 2;
+    
+    div {
+      display: inline-block;
+      text-align: center;
+      width: 50%;
+      border: 2px solid white;
+      
+      &.active {
+        background-color: white;
+      }
     }
   }
   
@@ -15,16 +68,79 @@
     margin-top: @grid-gutter-width / 2;
   }
   
-  .screenshot {
-    .make-xs-column(12);
-    .make-sm-column(6);
-    .make-md-column(3);
+  .screenshot-container {
+    white-space: nowrap;
+    overflow-x: hidden;    
+    margin: 0 auto;
     
-    text-align: center;
+    .screenshot {
+      margin: 0 15px;
+    }
+    
+    .screenshots-android, .screenshots-ios {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    
+    .screenshot {
+      display: inline-block;
+      margin: 0 @grid-gutter-width / 2;
+      text-align: center;
+      width: 200px;
+      white-space: normal;
+      
+      img {
+        margin: 10px 0;
+        border: 1px solid #ccc;
+      }
+    }
+    
+    @media (min-width: @screen-sm-min) {
+      width: 460px;
+    }
+    
+    @media (min-width: @screen-md-min) {
+      width: 690px;
+    }
+    
+    @media (min-width: @screen-lg-min) {      
+      width: 920px;
+    }
+  }
+   
+  .left, .right {
+    position: absolute;
+    height: 100%;
+    width: 55px;
+    top: 0;
+    cursor: pointer;
     
     img {
-      margin: 10px 0;
-      border: 1px solid #ccc;
+      top: 40%;
+      position: absolute;
+    }
+  }
+  
+  .right {
+    right: @grid-gutter-width / 2;
+  }
+}
+
+@media(max-width: @screen-xs-max) {
+  .screenshots {
+    border: none;
+    
+    .screenshots-header, .platform {
+      h1 {
+        font-size: 30px;
+        padding: 0;
+      }
+    }
+    
+    .screenshot-container { 
+      margin: 0;
+      overflow-x: scroll;
+      width: 100%;
     }
   }
 }

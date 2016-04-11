@@ -2,18 +2,23 @@
 layout: default
 ---
 
-{{>header }}
+{{>header showMobile = true}}
 
-{{>framework_info }}
+<main>
+  <div class="framework-info-wrapper">
+    {{>framework_info }}
 
-{{>screenshots }}
+    {{>screenshots }}
+  </div>
 
-{{#if contributors }}
-  {{>contributors }}
-{{/if}}
+  {{#if contributors }}
+    {{>contributors }}
+  {{/if}}
+</main>
 
-{{>frameworks_table }}
+{{>frameworks_table hidden = "hidden-xs" }}
 
+<script type="text/javascript" src="{{ site.baseurl }}/scripts/screenshotGallery.js"></script>
 <script type="text/javascript">
     !function() {
         var buttons = document.getElementsByClassName('github-issue-count-button');

@@ -45,6 +45,7 @@ a:hover {
   .make-md-column(3);
   .make-lg-column(3);
 
+  color: @profile-text;
   background-color: @profile-background;
   background-clip: content-box;
   margin-bottom: @grid-gutter-width / 2;
@@ -64,6 +65,10 @@ a:hover {
   @media(max-width: @screen-xs-max){
     background-clip: padding-box;
   }
+  
+  a {
+    color: @profile-text;
+  }
 }
 
 .profile-image, .profile-identicon, .profile-info, .profile-blank {
@@ -78,4 +83,9 @@ a:hover {
     font-weight: @font-weight-bold;
     line-height: @profile-height;
   }
+}
+
+.language {
+  font-size: 12px;
+  color: fadeout(gray, 20%);
 }
