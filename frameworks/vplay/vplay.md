@@ -20,6 +20,8 @@ links:
 
 [V-Play](http://v-play.net) is a cross-platform development framework for creating mobile games and apps. Based on the _Qt framework_, V-Play provides native performance and appearance on all supported platforms, including iOS and Android.
 
+V-Play Apps adds new components on top of Qt that are designed mobile-first (iOS, Android) in mind. It adds out-of-the-box native look and feel (like screen transition animations) on each target platform and automated handling of screen resolutions, aspect ratios & densities.
+
 V-Play is voted as the best supported, most time-saving and easiest to learn cross-platform development tool in a recent _The Cross-Platform Tool Benchmarking 2014_ _research2guidance_ report. It offers a variety of plugins to monetize, analyze and engage users with native integrations for push notifications, in-app purchases and ad frameworks.
 
 V-Play supports the following platforms:
