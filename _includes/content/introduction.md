@@ -1,3 +1,5 @@
+**NOTICE** - PropertyCross is no longer actively developer, and has moved into maintenance. For more information, please refer to [the related issue on GitHub](https://github.com/tastejs/PropertyCross/issues/338#issuecomment-296971528)
+
 Developers are now finding themselves having to author applications for a diverse range of mobile platforms (iOS, Android, Windows Phone, ...), each of which have their own 'native' development languages, tools and environment.
 
 There is an ever growing list of cross-platform frameworks that allow you to minimise the cost and effort of developing mobile apps, but which to choose?
